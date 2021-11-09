@@ -1,79 +1,186 @@
 {
-  "manifest": {
-    "publishingInformation": {
-      "locales": {
-        "it-IT": {
-          "name": "Memoria Amica",
-          "description": "Questo strumento cerca di: contribuire a migliorare la qualità di vita dei pazienti, assisterli per quel che possibile, in casa. Il tutto ovviamente avviene sotto la supervisione di familiari ed, eventualmente, di un terapista che abbiano un quadro completo della situazione e possano gestirla in situazioni di difficoltà.  è stata ideata come una soluzione smart e versatile, la cui idea generale è quella di creare un sistema che sia in grado di offrire un aiuto domestico concreto alle persone che stanno affrontando le prime fasi di questa malattia, caratterizzate spesso da perdita di memoria e disorientamento. In aggiunta, si è pensato di creare una rete di supporto costruita principalmente dai familiari ed estendibile ai terapisti, i quali accompagnano e seguono giorno dopo giorno i familiari/pazienti nelle loro attività cognitive e motorie, nonché nelle terapie mediche. La skill in questione sfrutta la tecnologia per aiutare a contenere il danno provocato dalla malattia e rappresenta una vera e propria memoria virtuale per il paziente. Da qui la scelta di sfruttare l’intelligenza di un assistente vocale per gestire informazioni prevalentemente personali, quali dati anagrafici e generalità, informazioni sui parenti, promemoria e timers. Inoltre, in accordo con le terapiste dell’Associazione “Alzheimer Bari Onlus”, sono stati implementati due esercizi, rispettivamente per la memoria linguistica e semantica, atti e contenere il declino cognitivo.",
-          "smallIconUri": "file://assets/images/it-IT_smallIconUri.png",
-          "largeIconUri": "file://assets/images/it-IT_largeIconUri.png",
-          "summary": "Questa skill si propone di aiutare le persone che soffrono di deficit cognitivo, permettendo ai pazienti di gestire la propria vita nell’ambiente domestico.",
-          "examplePhrases": [
-            "Alexa apri memoria amica",
-            "Alexa lancia memoria amica",
-            "Echo apri memoria amica"
-          ],
-          "keywords": [
-            "demenza",
-            "declino",
-            "cognitivo",
-            "lieve",
-            "alzheimer",
-            "supporto",
-            "domestico",
-            "assistenza"
-          ]
-        }
-      },
-      "isAvailableWorldwide": true,
-      "testingInstructions": "Concedere i permessi alla skill per poterla testare a pieno delle sue funzionalità",
-      "category": "HEALTH_AND_FITNESS",
-      "distributionMode": "PUBLIC",
-      "distributionCountries": []
-    },
-    "apis": {
-      "custom": {
-        "endpoint": {
-          "uri": "ask-custom-default",
-          "sourceDir": "lambda/custom"
+    "manifest": {
+        "publishingInformation": {
+            "locales": {
+                "en-US": {
+                    "name": "Hello World",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "Alexa open hello world",
+                        "hello",
+                        "help"
+                    ],
+                    "keywords": []
+                },
+                "en-GB": {
+                    "name": "Hello World",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "Alexa open hello world",
+                        "hello",
+                        "help"
+                    ],
+                    "keywords": []
+                },
+                "en-CA": {
+                    "name": "Hello World",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "Alexa open hello world",
+                        "hello",
+                        "help"
+                    ],
+                    "keywords": []
+                },
+                "en-IN": {
+                    "name": "Hello World",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "Alexa open hello world",
+                        "hello",
+                        "help"
+                    ],
+                    "keywords": []
+                },
+                "en-AU": {
+                    "name": "Hello World",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "Alexa open hello world",
+                        "hello",
+                        "help"
+                    ],
+                    "keywords": []
+                },
+                "es-ES": {
+                    "name": "Hola Mundo",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "Alexa abre hola mundo",
+                        "hola",
+                        "ayuda"
+                    ],
+                    "keywords": []
+                },
+                "es-MX": {
+                    "name": "Hola Mundo",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "Alexa abre hola mundo",
+                        "hola",
+                        "ayuda"
+                    ],
+                    "keywords": []
+                },
+                "es-US": {
+                    "name": "Hola Mundo",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "Alexa abre hola mundo",
+                        "hola",
+                        "ayuda"
+                    ],
+                    "keywords": []
+                },
+                "fr-FR": {
+                    "name": "Le Génie des Salutations",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "Alexa ouvre le génie des salutations",
+                        "bonjour",
+                        "aide"
+                    ],
+                    "keywords": []
+                },
+                "fr-CA": {
+                    "name": "Le Génie des Salutations",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "Alexa ouvre le génie des salutations",
+                        "bonjour",
+                        "aide"
+                    ],
+                    "keywords": []
+                },
+                "ja-JP": {
+                    "name": "ハローワールド",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "アレクサ、ハローワールドを開いて",
+                        "こんにちは",
+                        "ヘルプ"
+                    ],
+                    "keywords": []
+                },
+                "de-DE": {
+                    "name": "Hallo Welt",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "Alexa öffne hallo welt",
+                        "hallo",
+                        "hilfe"
+                    ],
+                    "keywords": []
+                },
+                "it-IT": {
+                    "name": "Ciao Mondo",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "Alexa apri ciao mondo",
+                        "ciao",
+                        "aiuto"
+                    ],
+                    "keywords": []
+                },
+                "hi-IN": {
+                    "name": "नमस्ते दुनिया",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "Alexa मज़ेदार नमस्ते दुनिया",
+                        "hello",
+                        "मदद करो"
+                    ],
+                    "keywords": []
+                },
+                "pt-BR": {
+                    "name": "Olá Mundo",
+                    "summary": "Sample Short Description",
+                    "description": "Sample Full Description",
+                    "examplePhrases": [
+                        "Alexa abra olá mundo",
+                        "olá",
+                        "ajuda"
+                    ],
+                    "keywords": []
+                }
+            },
+            "isAvailableWorldwide": true,
+            "testingInstructions": "Sample Testing Instructions.",
+            "category": "KNOWLEDGE_AND_TRIVIA",
+            "distributionCountries": []
         },
-        "interfaces": [
-          {
-            "type": "AUDIO_PLAYER"
-          },
-          {
-            "minimumTemplateVersion": "1.0",
-            "type": "RENDER_TEMPLATE"
-          }
-        ]
-      }
-    },
-    "manifestVersion": "1.0",
-    "permissions": [
-      {
-        "name": "alexa::devices:all:address:full:read"
-      },
-      {
-        "name": "alexa::profile:given_name:read"
-      },
-      {
-        "name": "alexa::profile:email:read"
-      },
-      {
-        "name": "alexa::profile:mobile_number:read"
-      },
-      {
-        "name": "alexa::alerts:reminders:skill:readwrite"
-      },
-      {
-        "name": "alexa::devices:all:geolocation:read"
-      },
-      {
-        "name": "alexa::person_id:read"
-      },
-      {
-        "name": "alexa::alerts:timers:skill:readwrite"
-      }
-    ]
-  }
+        "apis": {
+            "custom": {
+                "endpoint": {
+                    "sourceDir": "lambda/custom",
+                    "uri": "ask-custom-helloworld-default"
+                }
+            }
+        },
+        "manifestVersion": "1.0"
+    }
 }

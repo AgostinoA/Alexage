@@ -1,0 +1,79 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "it-IT": {
+          "name": "Memoria Amica",
+          "description": "Questo strumento cerca di: contribuire a migliorare la qualità di vita dei pazienti, assisterli per quel che possibile, in casa. Il tutto ovviamente avviene sotto la supervisione di familiari ed, eventualmente, di un terapista che abbiano un quadro completo della situazione e possano gestirla in situazioni di difficoltà.  è stata ideata come una soluzione smart e versatile, la cui idea generale è quella di creare un sistema che sia in grado di offrire un aiuto domestico concreto alle persone che stanno affrontando le prime fasi di questa malattia, caratterizzate spesso da perdita di memoria e disorientamento. In aggiunta, si è pensato di creare una rete di supporto costruita principalmente dai familiari ed estendibile ai terapisti, i quali accompagnano e seguono giorno dopo giorno i familiari/pazienti nelle loro attività cognitive e motorie, nonché nelle terapie mediche. La skill in questione sfrutta la tecnologia per aiutare a contenere il danno provocato dalla malattia e rappresenta una vera e propria memoria virtuale per il paziente. Da qui la scelta di sfruttare l’intelligenza di un assistente vocale per gestire informazioni prevalentemente personali, quali dati anagrafici e generalità, informazioni sui parenti, promemoria e timers. Inoltre, in accordo con le terapiste dell’Associazione “Alzheimer Bari Onlus”, sono stati implementati due esercizi, rispettivamente per la memoria linguistica e semantica, atti e contenere il declino cognitivo.",
+          "smallIconUri": "file://assets/images/it-IT_smallIconUri.png",
+          "largeIconUri": "file://assets/images/it-IT_largeIconUri.png",
+          "summary": "Questa skill si propone di aiutare le persone che soffrono di deficit cognitivo, permettendo ai pazienti di gestire la propria vita nell’ambiente domestico.",
+          "examplePhrases": [
+            "Alexa apri memoria amica",
+            "Alexa lancia memoria amica",
+            "Echo apri memoria amica"
+          ],
+          "keywords": [
+            "demenza",
+            "declino",
+            "cognitivo",
+            "lieve",
+            "alzheimer",
+            "supporto",
+            "domestico",
+            "assistenza"
+          ]
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Concedere i permessi alla skill per poterla testare a pieno delle sue funzionalità",
+      "category": "HEALTH_AND_FITNESS",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "ask-custom-default",
+          "sourceDir": "lambda/custom"
+        },
+        "interfaces": [
+          {
+            "type": "AUDIO_PLAYER"
+          },
+          {
+            "minimumTemplateVersion": "1.0",
+            "type": "RENDER_TEMPLATE"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::devices:all:address:full:read"
+      },
+      {
+        "name": "alexa::profile:given_name:read"
+      },
+      {
+        "name": "alexa::profile:email:read"
+      },
+      {
+        "name": "alexa::profile:mobile_number:read"
+      },
+      {
+        "name": "alexa::alerts:reminders:skill:readwrite"
+      },
+      {
+        "name": "alexa::devices:all:geolocation:read"
+      },
+      {
+        "name": "alexa::person_id:read"
+      },
+      {
+        "name": "alexa::alerts:timers:skill:readwrite"
+      }
+    ]
+  }
+}
