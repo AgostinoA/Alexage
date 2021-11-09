@@ -1,8 +1,6 @@
 # Memoria Amica 2.0
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
-### This is a simple tutorial to introduce skill.
-
 ## Skill Architecture
 Each skill consists of two basic parts, a front end and a back end.
 The front end is the voice interface, or VUI.
