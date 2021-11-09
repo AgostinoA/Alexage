@@ -7,8 +7,8 @@
         "scripts": {
 
         },
-        "license": "Apache License",
-        "author": "Alessia Loiacono",
+        "license": "",
+        "author": "",
         "dependencies": {
             "ask-sdk-core": "^2.7.0",
             "ask-sdk-model": "^1.27.0",
