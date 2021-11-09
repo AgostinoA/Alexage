@@ -1,4 +1,4 @@
-# Friend Memory 2.0
+# Friend Memory 2.0 - Alexage
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
 This tool seeks to: contribute to improving the quality of life of patients, assisting them as much as possible, at home.
