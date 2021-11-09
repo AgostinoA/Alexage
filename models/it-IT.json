@@ -1,2121 +1,2120 @@
 {
   "interactionModel": {
-    "languageModel": {
-      "invocationName": "memoria amica",
-      "intents": [
-        {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": [
-            "chiudi ",
-            "fine sessione",
-            "esci",
-            "stop"
-          ]
-        },
-        {
-          "name": "RegisterBirthdayIntent",
-          "slots": [
-            {
-              "name": "day",
-              "type": "AMAZON.NUMBER",
-              "samples": [
-                "il {day} {month} {year}",
-                "il giorno {day}",
-                "il {day}",
-                "{day} di {month}",
-                "il {day} di {month}",
-                "{day} di {month} {year}",
-                "il {day} di {month} del {year}"
-              ]
-            },
-            {
-              "name": "month",
-              "type": "MonthType",
-              "samples": [
-                "di {month} ",
-                "il {day} {month} {year}",
-                "a {month}",
-                "mese di {month}",
-                "il mese di {month}",
-                "{day} di {month}",
-                "il {day} di {month}",
-                "{day} di {month} del {year}",
-                "il {day} di {month} del {year}"
-              ]
-            },
-            {
-              "name": "year",
-              "type": "AMAZON.FOUR_DIGIT_NUMBER",
-              "samples": [
-                "il {day} {month} {year}",
-                "il {year}",
-                "del {year}",
-                "sono nato nel {year}",
-                "sono nata nel {year}",
-                "anno {year}",
-                "nel {year}",
-                "nell\u0027anno {year}",
-                "l\u0027anno {year}",
-                "{day} di {month} del {year}",
-                "il {day} di {month} del {year}",
-                "{month} di {year}",
-                "a {month} del {year}"
-              ]
-            }
-          ],
-          "samples": [
-            "cambia generalità",
-            "modifica data di nascita",
-            "modifica compleanno",
-            "modifica generalità",
-            "aggiungi generalità",
-            "le mie generalità",
-            "aggiungi la mia data di compleanno",
-            "aggiungi il mio compleanno",
-            "la mia data di nascita è il {day} di {month} del {year}",
-            "la mia data di nascita è il {day} {month} {year}",
-            "sono nato il {day} {month} {year}",
-            "il mio compleanno è il {day} {month} {year}",
-            "ricorda il mio compleanno",
-            "registra il mio compleanno",
-            "registra la mia data di nascita",
-            "ricordati il mio compleanno",
-            "segnati il mio comple",
-            "prendi nota del mio comple",
-            "prendi nota del mio compleanno"
-          ]
-        },
-        {
-          "name": "AMAZON.NavigateHomeIntent",
-          "samples": []
-        },
-        {
-          "name": "SayBirthdayIntent",
-          "slots": [],
-          "samples": [
-            "quanto manca al compleanno",
-            "data di nascita",
-            "dimmi la mia età",
-            "dimmi la mia data di nascita",
-            "info età e data di nascita",
-            "età anagrafica",
-            "qual è la mia età",
-            "quand\u0027è il mio compleanno",
-            "quando sono nato",
-            "qual è la mia data di nascita",
-            "il mio prossimo compleanno",
-            "prossimo compleanno",
-            "quando è il mio compleanno",
-            "il mio compleanno",
-            "quanto manca al mio compleanno",
-            "giorni al mio compleanno",
-            "info compleanno",
-            "dimmi i giorni rimasti al mio compleanno",
-            "dimmi quanto manca al mio compleanno",
-            "quanti giorni mancano"
-          ]
-        },
-        {
-          "name": "RemindBirthdayIntent",
-          "slots": [
-            {
-              "name": "message",
-              "type": "AMAZON.SearchQuery",
-              "samples": [
-                "andare {message}",
-                "fare {message}",
-                "vai {message}",
-                "fai {message}",
-                "devo {message}",
-                "per {message}",
-                "che {message}",
-                "{message}"
-              ]
-            },
-            {
-              "name": "date",
-              "type": "AMAZON.DATE",
-              "samples": [
-                "per il {date}",
-                "il {date}",
-                "{date}"
-              ]
-            },
-            {
-              "name": "time",
-              "type": "AMAZON.TIME",
-              "samples": [
-                "{time}",
-                "per le {time}",
-                "alle {time}"
-              ]
-            }
-          ],
-          "samples": [
-            "crea un promemoria per {message}",
-            "imposta un promemoria per {message}",
-            "nuovo promemoria per {message}",
-            "programma un appuntamento",
-            "crea un appuntamento",
-            "appuntamento",
-            "promemoria",
-            "reminder",
-            "configura un promemoria",
-            "imposta un promemoria",
-            "promemoria con il testo {message}",
-            "configura un reminder con il testo {message}",
-            "inserisci un reminder con il testo {message}"
-          ]
-        },
-        {
-          "name": "DementiaInfoIntent",
-          "slots": [],
-          "samples": [
-            "declino cognitivo",
-            "Cos\u0027è il declino cognitivo ",
-            "Cos\u0027è il declino cognitivo lieve",
-            "declino cognitivo lieve",
-            "Cosa vuol dire declino cognitivo",
-            "Approfondire cosa vuol dire demenza ",
-            "Approfondimento riguardo la malattia",
-            "Cosa è la demenza e quali sono i suoi sintomi",
-            "Quali sono i sintomi della demenza",
-            "Sintomi della demenza",
-            "Demenza e sintomi",
-            "Cosa vuol dire deficit cognitivo",
-            "Cos\u0027è il deficit cognitivo",
-            "Deficit cognitivo",
-            "Cos\u0027è la demenza senile",
-            "Info demenza",
-            "Demenza senile",
-            "Cosa vuol dire demenza",
-            "Voglio sapere di più sulla demenza",
-            "Voglio informazioni sulla demenza",
-            "Cos\u0027è la demenza"
-          ]
-        },
-        {
-          "name": "AddressIntent",
-          "slots": [],
-          "samples": [
-            "vivo",
-            "abito",
-            "casa mia",
-            "ti ricordi dov\u0027è casa mia",
-            "vorrei sapere dove abito",
-            "vorrei sapere il mio indirizzo postale",
-            "il mio indirizzo",
-            "indirizzo di residenza",
-            "dove si trova casa mia",
-            "dove si trova la mia abitazione",
-            "qual\u0027è il mio domicilio",
-            "qual\u0027è la mia residenza",
-            "dove risiedo",
-            "in che via si trova casa mia",
-            "in che via abito",
-            "dov\u0027è casa mia",
-            "dove abito",
-            "dove sono",
-            "dove mi trovo"
-          ]
-        },
-        {
-          "name": "NumberIntent",
-          "slots": [],
-          "samples": [
-            "numero di cellulare",
-            "numero di telefono",
-            "telefono cellulare",
-            "dimmi il mio numero di telefono",
-            "dimmi il mio numero di cellulare",
-            "dimmi il mio numero ",
-            "a che numero di telefono è associato questo account",
-            "mi diresti il mio numero di cellulare",
-            "il mio numero di cellulare",
-            "il mio numero di telefono",
-            "a che numero di telefono è associato il dispositivo",
-            "quale è il mio cellulare",
-            "potresti aiutarmi con il mio numero di telefono",
-            "non ricordo il mio telefono",
-            "potrei sapere il mio numero di telefono",
-            "vorrei sapere il mio numero",
-            "vorrei sapere il mio numero di cellulare",
-            "ho dimenticato il mio numero",
-            "mi dici il mio numero di cellulare",
-            "qual\u0027è il mio numero di telefono"
-          ]
-        },
-        {
-          "name": "EmailIntent",
-          "slots": [],
-          "samples": [
-            "posta elettronica",
-            "mail",
-            "email",
-            "qual\u0027è il mio indirizzo email",
-            "vorrei sapere il mio indirizzo di posta elettronica",
-            "qual\u0027è il mio indirizzo di posta elettronica",
-            "indirizzo di posta elettronica",
-            "potrei sapere il mio indirizzo mail",
-            "a quale indirizzo email sei associata",
-            "a quale indirizzo mail è associato il mio account",
-            "mi diresti il mio indirizzo mail",
-            "mi dici il mio indirizzo email",
-            "indirizzo mail",
-            "indirizzo email",
-            "qual\u0027è la mia mail",
-            "quale è il mio indirizzo email"
-          ]
-        },
-        {
-          "name": "RelaxIntent",
-          "slots": [],
-          "samples": [
-            "rilassarmi",
-            "rilassare",
-            "relax",
-            "consigli su come rilassarmi",
-            "consigli per rilassarmi",
-            "consigli per il relax",
-            "come posso rilassarmi"
-          ]
-        },
-        {
-          "name": "SupplyIntent",
-          "slots": [],
-          "samples": [
-            "consigli per una dieta sana ed equilibrata",
-            "consigli per una dieta sana",
-            "consigli per una dieta equilibrata",
-            "dieta sana",
-            "dieta equilibrata",
-            "mangiare meglio",
-            "vorrei sapere come mangiare meglio",
-            "vorrei sapere come mangiare in modo equilibrato",
-            "vorrei sapere come mangiare equilibrato",
-            "vorrei sapere come mangiare bene",
-            "vorrei sapere come mangiare sano",
-            "mangiare sano",
-            "consigli per mangiare",
-            "mangiare bene",
-            "consigli per un alimentazione equilibrata",
-            "alimentazione equilibrata",
-            "alimentazione sana",
-            "alimentazione",
-            "consigli per mangiare sano",
-            "consigli per mangiare bene",
-            "consigli per l\u0027 alimentazione",
-            "consigli sull\u0027alimentazione"
-          ]
-        },
-        {
-          "name": "ActivityIntent",
-          "slots": [],
-          "samples": [
-            "consigli per il benessere quotidiano",
-            "benessere quotidiano",
-            "benessere",
-            "attività di benessere",
-            "attività per il benessere",
-            "dimmi di più su attività per il benessere",
-            "consigli su attività che favoriscano il benessere",
-            "vorrei dei consigli per attività che favoriscano il benessere",
-            "vorrei dei consigli sulle attività che favoriscano il benessere",
-            "consigli per attività che favoriscano il benessere",
-            "attività fisica",
-            "attività che favoriscano il benessere"
-          ]
-        },
-        {
-          "name": "GoOutIntent",
-          "slots": [],
-          "samples": [
-            "cose da prendere prima di uscire",
-            "cosa potrei dimenticarmi",
-            "cosa potrei dimenticare",
-            "cose da fare prima di uscire",
-            "esco",
-            "vado via",
-            "io esco",
-            "sono pronto per andare",
-            "sono pronta per andare",
-            "ricordami cosa devo prendere prima di uscire",
-            "sto andando via",
-            "Sto uscendo"
-          ]
-        },
-        {
-          "name": "ContinueIntent",
-          "slots": [
-            {
-              "name": "responseYN",
-              "type": "YesNo"
-            }
-          ],
-          "samples": [
-            "{responseYN}",
-            "{responseYN} voglio sapere altro",
-            "{responseYN} ricordami altro",
-            "{responseYN} dimmi di più",
-            "{responseYN} dimmi altro",
-            "{responseYN} basta così",
-            "{responseYN} non voglio sapere altro",
-            "{responseYN} non mi ricordare altro"
-          ]
-        },
-        {
-          "name": "ReadTimerIntent",
-          "slots": [],
-          "samples": [
-            "stato timer",
-            "stato timers",
-            "controlla timers",
-            "controlla i miei timers",
-            "controlla il mio timer",
-            "controlla timer",
-            "leggi il mio timer",
-            "controllo timer",
-            "stato del timer",
-            "qual è lo stato del mio timer",
-            "tempo rimasto",
-            "qual è il tempo rimanente",
-            "quanto tempo manca",
-            "facciamo un controllo orario"
-          ]
-        },
-        {
-          "name": "SetTimerIntent",
-          "slots": [
-            {
-              "name": "duration",
-              "type": "AMAZON.DURATION",
-              "samples": [
-                "fra {duration}",
-                "tra {duration}",
-                "per {duration}",
-                "di {duration}",
-                "da {duration}",
-                "{duration}",
-                "è di {duration}"
-              ]
-            },
-            {
-              "name": "tmessage",
-              "type": "AMAZON.SearchQuery",
-              "samples": [
-                "fare {tmessage}",
-                "devo {tmessage}",
-                "per {tmessage}",
-                "{tmessage}"
-              ]
-            }
-          ],
-          "samples": [
-            "ricordami che {tmessage}",
-            "imposta un timer con il messaggio {tmessage}",
-            "impostaun timer per {tmessage}",
-            "ricordami di  {tmessage}",
-            "ricordami tra {duration}",
-            "{duration} timer",
-            "imposta un timer di {duration}",
-            "imposta un timer da {duration}",
-            "imposta un timer per {duration}",
-            "imposta un timer tra {duration}",
-            "crea un timer di {duration}",
-            "crea un timer da {duration}",
-            "crea un timer per {duration}",
-            "crea un timer tra {duration}",
-            "timer di {duration}",
-            "timer",
-            "voglio impostare un timer",
-            "crea un timer",
-            "imposta timer",
-            "imposta un timer",
-            "crea timer"
-          ]
-        },
-        {
-          "name": "DeleteTimerIntent",
-          "slots": [],
-          "samples": [
-            "distruggi il mio timer",
-            "rimuovi il mio timer",
-            "elimina il mio timer",
-            "cancella il mio timer",
-            "distruggi timer",
-            "rimuovi timer",
-            "elimina timer",
-            "cancella timer"
-          ]
-        },
-        {
-          "name": "AMAZON.PauseIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.ResumeIntent",
-          "samples": []
-        },
-        {
-          "name": "PauseTimerIntent",
-          "slots": [],
-          "samples": [
-            "metti in pausa il timer",
-            "pausa timer",
-            "blocca i miei timer",
-            "sospendi i timers",
-            "sospendi timers",
-            "sospendi timer",
-            "sospendi i miei timers",
-            "ferma tutti i miei timers",
-            "ferma tutti i timers",
-            "ferma i timers",
-            "stoppa timers",
-            "stoppa tutti i timers",
-            "stoppa timer",
-            "ferma il timer",
-            "ferma il mio timer",
-            "stoppa il mio timer",
-            "metti in pausa il mio timer"
-          ]
-        },
-        {
-          "name": "ResumeTimerIntent",
-          "slots": [],
-          "samples": [
-            "continua il timer",
-            "continua i timers",
-            "riavvia timers",
-            "riavvia timer",
-            "riavvia i miei timers",
-            "riavvia il mio timer",
-            "riesegui il mio timer",
-            "continua timers",
-            "continua timer",
-            "continua i miei timers",
-            "continua il mio timer",
-            "riprendi timers",
-            "riprendi i miei timers",
-            "riprendi timer",
-            "riprendi il mio timer"
-          ]
-        },
-        {
-          "name": "ActivityAdviceIntent",
-          "slots": [],
-          "samples": [
-            "attività da fare",
-            "attività da svolgere",
-            "consigli su cosa fare",
-            "consiglio su cosa fare",
-            "suggerimento",
-            "consiglio",
-            "consigli sulle attività",
-            "suggerimenti",
-            "consigli",
-            "suggerimenti sulle attività",
-            "consigli sull\u0027attività fisica"
-          ]
-        },
-        {
-          "name": "RegisterSonsNumberIntent",
-          "slots": [
-            {
-              "name": "sonsNumber",
-              "type": "AMAZON.NUMBER",
-              "samples": [
-                "{sonsNumber} figlio",
-                "{sonsNumber} figlie",
-                "{sonsNumber} figli",
-                "da {sonsNumber} figlie",
-                "siamo {sonsNumber} figlie",
-                "sono {sonsNumber} figlio",
-                "ho {sonsNumber} figlio",
-                "ho {sonsNumber} figlie",
-                "ho {sonsNumber} figli",
-                "{sonsNumber}",
-                "da {sonsNumber} figli",
-                "da {sonsNumber}",
-                "siamo {sonsNumber} figli",
-                "la nostra famiglia è composta da {sonsNumber} figli"
-              ]
-            }
-          ],
-          "samples": [
-            "cambia numero figli",
-            "cambia il numero delle figlie",
-            "cambia il numero dei figli",
-            "cambia il numero dei miei figli",
-            "modifica numero figlio",
-            "modifica numero figlie",
-            "modifica il numero delle figlie",
-            "ricordati il numero delle mie figlie",
-            "registra il numero delle mie figlie che è {sonsNumber}",
-            "registra il numero dei miei figli che è {sonsNumber}",
-            "modifica il numero dei miei figli in {sonsNumber}",
-            "registra il numero dei miei figli",
-            "prendi nota del numero figli",
-            "modifica numero figli",
-            "registra numero figli",
-            "registra numero dei figli",
-            "modifica numero dei figli"
-          ]
-        },
-        {
-          "name": "SaySonsNumberIntent",
-          "slots": [],
-          "samples": [
-            "quanti sono",
-            "quante sono le mie figlie",
-            "quanti sono i miei figli",
-            "numero figlie",
-            "numero figli",
-            "il numero dei miei figli",
-            "qual\u0027è il numero dei figli",
-            "qual\u0027è il numero dei miei figli",
-            "quanti figli ho",
-            "dimmi quanti figli ho"
-          ]
-        },
-        {
-          "name": "RegisterSonsNamesIntent",
-          "slots": [
-            {
-              "name": "sonsNames",
-              "type": "AMAZON.SearchQuery",
-              "samples": [
-                "{sonsNames}",
-                "i nostri nomi sono {sonsNames}",
-                "è {sonsNames}",
-                "il nome è {sonsNames}",
-                "i nomi sono {sonsNames}",
-                "sono {sonsNames}",
-                "siamo {sonsNames}",
-                "ci chiamiamo {sonsNames}"
-              ]
-            }
-          ],
-          "samples": [
-            "modifica nomi figlie",
-            "registra il nome di mia figlia",
-            "registra il nome di mio figlio",
-            "registra i nomi delle mie figlie",
-            "prendi nota dei nomi",
-            "prendi nota del nome",
-            "modifica il nome",
-            "modifica i nomi ",
-            "i nomi delle mie figlie sono {sonsNames}",
-            "il nome di mia figlia è {sonsNames}",
-            "il nome di mio figlio è {sonsNames}",
-            "i nomi dei miei figli sono {sonsNames}",
-            "ricordati i nomi dei miei figli",
-            "ricordati i nomi dei figli",
-            "prendi nota dei nomi figli",
-            "prendi nota dei nomi dei figli",
-            "prendi nota dei nomi dei miei figli",
-            "modifica nomi figli",
-            "registra nomi figli",
-            "modifica i nomi dei miei figli",
-            "registra i nomi dei miei figli"
-          ]
-        },
-        {
-          "name": "SaySonsNamesIntent",
-          "slots": [],
-          "samples": [
-            "come si chiamano",
-            "come si chiama",
-            "quali sono i nomi",
-            "qual è il nome",
-            "dimmi quali sono i nomi delle mie figlie",
-            "dimmi quali sono i nomi ",
-            "dimmi qual è il nome di mia figlia",
-            "nomi figlie",
-            "nome figlia",
-            "quali sono i nomi dei miei figli",
-            "qual è il nome di mio figlio",
-            "come si chiamano i miei figli",
-            "come si chiama mio figlio",
-            "dimmi qual è il nome di mio figlio",
-            "dimmi quali sono i nomi dei miei figli",
-            "nome figlio",
-            "nomi figli"
-          ]
-        },
-        {
-          "name": "RegisterEmergencyContactIntent",
-          "slots": [
-            {
-              "name": "emergencyContact",
-              "type": "AMAZON.NUMBER",
-              "samples": [
-                "il mio contatto di emergenza è {emergencyContact}",
-                "è {emergencyContact}",
-                "il contatto di emergenza è {emergencyContact}",
-                "{emergencyContact}"
-              ]
-            }
-          ],
-          "samples": [
-            "registrare contatto emergenza",
-            "cambiare contatto emergenza",
-            "modificare contatto emergenza",
-            "aggiornare contatto emergenza",
-            "aggiorna contatto emergenza",
-            "aggiorna numero emergenza",
-            "aggiornare numero emergenza",
-            "modificare numero emergenza",
-            "cambiare numero emergenza",
-            "registrare numero emergenza",
-            "registra numero emergenza",
-            "registra il numero di emergenza",
-            "cambia numero emergenza",
-            "cambia il numero emergenza",
-            "cambia numero di emergenza",
-            "cambia il numero di emergenza",
-            "modifica numero di emergenza",
-            "modifica il numero emergenza",
-            "modifica il numero di emergenza",
-            "modifica numero emergenza",
-            "aggiungi numero emergenza",
-            "aggiungi il numero emergenza",
-            "aggiungi numero di emergenza",
-            "aggiungi il numero di emergenza",
-            "cambia contatto di emergenza",
-            "cambia il contatto emergenza",
-            "modifica il contatto emergenza",
-            "modifica contatto di emergenza",
-            "registra contatto di emergenza",
-            "registra il contatto emergenza",
-            "scrivi il contatto emergenza",
-            "scrivi contatto di emergenza",
-            "aggiungi il contatto di emergenza",
-            "aggiungi il contatto emergenza",
-            "nuovo contatto emergenza",
-            "scrivi contatto emergenza",
-            "cambia contatto emergenza",
-            "aggiungi contatto emergenza",
-            "modifica contatto emergenza",
-            "registra contatto emergenza",
-            "nuovo contatto di emergenza",
-            "scrivi il contatto di emergenza",
-            "cambia il contatto di emergenza",
-            "modifica il contatto di emergenza",
-            "registra il contatto di emergenza"
-          ]
-        },
-        {
-          "name": "SayEmergencyContactIntent",
-          "slots": [],
-          "samples": [
-            "qual è il mio contatto emergenza",
-            "qual è il contatto emergenza",
-            "qual è il mio numero di emergenza",
-            "qual è il numero di emergenza",
-            "dimmi il mio numero di emergenza",
-            "dimmi il mio contatto di emergenza",
-            "dimmi qual è il numero di emergenza",
-            "dimmi qual è il contatto di emergenza",
-            "dimmi il contatto di emergenza",
-            "dimmi il numero di emergenza",
-            "contatto emergenza",
-            "numero emergenza",
-            "numero di emergenza",
-            "contatto di emergenza",
-            "qual è il mio contatto di emergenza"
-          ]
-        },
-        {
-          "name": "FirstGameIntent",
-          "slots": [],
-          "samples": [
-            "primo esercizio",
-            "esercizio uno",
-            "giochiamo con la memoria linguistica",
-            "facciamo il primo gioco",
-            "apri il primo gioco",
-            "giochiamo insieme",
-            "giochiamo ",
-            "vorrei fare un gioco per la memoria",
-            "voglio fare un esercizio per la memoria",
-            "voglio fare un gioco per la memoria",
-            "primo gioco",
-            "gioco uno",
-            "vorrei fare esercizi per la memoria",
-            "vorrei esercitarmi",
-            "voglio esercitarmi",
-            "voglio fare un esercizio",
-            "memoria linguistica",
-            "gioco di memoria linguistica"
-          ]
-        },
-        {
-          "name": "AMAZON.RepeatIntent",
-          "samples": [
-            "non ho capito le parole",
-            "non ho capito tutte le parole",
-            "non ho capito ",
-            "ripeti le parole",
-            "puoi ripetere",
-            "ripetere",
-            "ripeti per favore",
-            "ripeti"
-          ]
-        },
-        {
-          "name": "SecondGameIntent",
-          "slots": [],
-          "samples": [
-            "leggi il testo ",
-            "lettura",
-            "testo",
-            "esercizio di comprensione",
-            "esercizio di storia",
-            "gioco per la memoria semantica",
-            "memoria semantica",
-            "tema con domande",
-            "tema",
-            "seconda guerra mondiale",
-            "storia",
-            "gioco due",
-            "secondo gioco"
-          ]
-        },
-        {
-          "name": "FirstQuestionIntent",
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "samples": [
-                "non me lo ricordo",
-                "non so",
-                "non mi ricordo",
-                "non lo ricordo",
-                "non ricordo",
-                "non lo so",
-                "era composto da {response}",
-                "dalle nazioni {response}",
-                "da {response}",
-                "{response}"
-              ]
-            }
-          ],
-          "samples": [
-            "domanda uno",
-            "inizia domande",
-            "prima domanda"
-          ]
-        },
-        {
-          "name": "SecondQuestionIntent",
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "samples": [
-                "non me lo ricordo",
-                "non lo ricordo",
-                "non mi ricordo",
-                "non ricordo",
-                "non so",
-                "non lo so",
-                "gli alleati erano {response}",
-                "erano {response}",
-                "{response}"
-              ]
-            }
-          ],
-          "samples": [
-            "domanda due",
-            "seconda domanda"
-          ]
-        },
-        {
-          "name": "ThirdQuestionIntent",
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "samples": [
-                "non me lo ricordo",
-                "non ricordo",
-                "non lo ricordo",
-                "non mi ricordo",
-                "non so",
-                "non lo so",
-                "invase la nazione della {response}",
-                "invase la {response}",
-                "la {response}",
-                "{response}"
-              ]
-            }
-          ],
-          "samples": [
-            "domanda tre",
-            "terza domanda"
-          ]
-        },
-        {
-          "name": "FourthQuestionIntent",
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "samples": [
-                "non me lo ricordo",
-                "non ricordo",
-                "non lo ricordo",
-                "non mi ricordo",
-                "non so",
-                "non lo so",
-                "{response}",
-                "l\u0027italia era governata da {response}",
-                "la governava {response}"
-              ]
-            }
-          ],
-          "samples": [
-            "domanda quattro",
-            "quarta domanda"
-          ]
-        },
-        {
-          "name": "FifthQuestionIntent",
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "samples": [
-                "non lo ricordo",
-                "non mi ricordo",
-                "non me lo ricordo",
-                "non ricordo",
-                "non so",
-                "non lo so ",
-                "il partito {response}",
-                "{response}",
-                "il {response}",
-                "benito mussolini fondò il partito {response}",
-                "benito mussolini fondò il {response}"
-              ]
-            }
-          ],
-          "samples": [
-            "domanda cinque",
-            "quinta domanda"
-          ]
-        },
-        {
-          "name": "SixthQuestionIntent",
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "samples": [
-                "non mi ricordo",
-                "non lo ricordo",
-                "non me lo ricordo",
-                "non ricordo",
-                "non so",
-                "non lo so",
-                "{response}",
-                "della {response}",
-                "di {response}",
-                "il re di {response}",
-                "il re della {response}"
-              ]
-            }
-          ],
-          "samples": [
-            "domanda sei",
-            "sesta domanda"
-          ]
-        },
-        {
-          "name": "SeventhQuestionIntent",
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "samples": [
-                "non lo ricordo",
-                "non me lo ricordo",
-                "non so",
-                "non lo so",
-                "non mi ricordo",
-                "non ricordo",
-                "Mussolini fu liberato da {response}",
-                "fu {response}",
-                "lo liberò {response}",
-                "{response}"
-              ]
-            }
-          ],
-          "samples": [
-            "domanda sette",
-            "settima domanda"
-          ]
-        },
-        {
-          "name": "EighthQuestionIntent",
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "samples": [
-                "non me lo ricordo",
-                "non lo ricordo",
-                "non mi ricordo",
-                "non ricordo",
-                "non lo so",
-                "non so",
-                "{response}",
-                "dai {response}",
-                "era formata dai {response}",
-                "era formata da {response}"
-              ]
-            }
-          ],
-          "samples": [
-            "domanda otto",
-            "ottava domanda"
-          ]
-        },
-        {
-          "name": "NinthQuestionIntent",
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "samples": [
-                "non lo ricordo",
-                "non mi ricordo",
-                "non me lo ricordo",
-                "non ricordo",
-                "non so",
-                "non lo so",
-                "{response}",
-                "morì {response}",
-                "venne {response}",
-                "fu {response}",
-                "egli {response}",
-                "Mussolini {response}"
-              ]
-            }
-          ],
-          "samples": [
-            "domanda nove",
-            "nona domanda"
-          ]
-        },
-        {
-          "name": "TenthQuestionIntent",
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "samples": [
-                "non lo ricordo",
-                "non me lo ricordo",
-                "non ricordo",
-                "non mi ricordo",
-                "non lo so",
-                "non so",
-                "il venticinque aprile in italia si festeggia {response}",
-                "il venticinque aprile si festeggia {response}",
-                "{response}",
-                "l\u0027 {response}",
-                "festeggiamo {response}",
-                "si festeggia {response}"
-              ]
-            }
-          ],
-          "samples": [
-            "domanda dieci",
-            "decima domanda"
-          ]
-        },
-        {
-          "name": "SecondGameTwoIntent",
-          "slots": [],
-          "samples": [
-            "potrei riascoltare la seconda parte",
-            "vorrei riascoltare la seconda parte",
-            "vorrei ascoltare la seconda parte ",
-            "seconda parte del testo",
-            "seconda parte del tema",
-            "mi puoi leggere la seconda parte della storia",
-            "mi puoi leggere la seconda parte del tema",
-            "inizia seconda parte della storia",
-            "seconda parte della storia",
-            "leggi seconda parte del testo"
-          ]
-        },
-        {
-          "name": "AMAZON.MoreIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NavigateSettingsIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NextIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.PageUpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.PageDownIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.PreviousIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.ScrollRightIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.ScrollDownIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.ScrollLeftIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.ScrollUpIntent",
-          "samples": []
-        },
-        {
-          "name": "PoemPlayerIntent",
-          "slots": [],
-          "samples": [
-            "pillola di bellezza",
-            "pillola di bellezza quotidiana",
-            "pillola di bellezza del giorno",
-            "pillola del giorno",
-            "poema quotidiano",
-            "poesia quotidiana",
-            "pillola quaotidiana",
-            "pillola quotidiana di bellezza",
-            "poema del giorno",
-            "poesia del giorno",
-            "narrami un poema",
-            "narra un poema",
-            "raccontami un poema",
-            "leggimi un poema",
-            "leggi un poema",
-            "racconta un poema",
-            "racconta una poesia",
-            "leggimi una poesia",
-            "narrami una poesia",
-            "narra una poesia",
-            "leggi una poesia",
-            "dimmi una poesia",
-            "raccontami una poesia"
-          ]
-        },
-        {
-          "name": "HelpIntent",
-          "slots": [],
-          "samples": [
-            "aiuta",
-            "aiutami",
-            "aiuto",
-            "cosa puoi fare",
-            "cosa fare",
-            "non so cosa fare",
-            "cosa sai fare",
-            "cosa fai",
-            "task",
-            "funzionalità",
-            "cosa potrei fare",
-            "cosa posso fare"
-          ]
-        }
-      ],
-      "types": [
-        {
-          "values": [
-            {
-              "id": "12",
-              "name": {
-                "value": "dicembre"
-              }
-            },
-            {
-              "id": "11",
-              "name": {
-                "value": "novembre"
-              }
-            },
-            {
-              "id": "10",
-              "name": {
-                "value": "ottobre"
-              }
-            },
-            {
-              "id": "09",
-              "name": {
-                "value": "settembre"
-              }
-            },
-            {
-              "id": "08",
-              "name": {
-                "value": "agosto"
-              }
-            },
-            {
-              "id": "07",
-              "name": {
-                "value": "luglio"
-              }
-            },
-            {
-              "id": "06",
-              "name": {
-                "value": "giugno"
-              }
-            },
-            {
-              "id": "05",
-              "name": {
-                "value": "maggio"
-              }
-            },
-            {
-              "id": "04",
-              "name": {
-                "value": "aprile"
-              }
-            },
-            {
-              "id": "03",
-              "name": {
-                "value": "marzo"
-              }
-            },
-            {
-              "id": "02",
-              "name": {
-                "value": "febbraio"
-              }
-            },
-            {
-              "id": "01",
-              "name": {
-                "value": "gennaio",
-                "synonyms": [
-                  "il primo mese dell\u0027anno"
-                ]
-              }
-            }
-          ],
-          "name": "MonthType"
-        },
-        {
-          "values": [
-            {
-              "id": "0",
-              "name": {
-                "value": "no",
-                "synonyms": [
-                  "no per favore",
-                  "no grazie"
-                ]
-              }
-            },
-            {
-              "id": "1",
-              "name": {
-                "value": "si ",
-                "synonyms": [
-                  "si per favore",
-                  "si grazie",
-                  "va bene",
-                  "certamente",
-                  "certo",
-                  "yes",
-                  "vai",
-                  "ok grazie",
-                  "ok",
-                  "si"
-                ]
-              }
-            }
-          ],
-          "name": "YesNo"
-        }
-      ]
-    },
-    "dialog": {
-      "intents": [
-        {
-          "name": "RegisterBirthdayIntent",
-          "confirmationRequired": true,
-          "prompts": {
-            "confirmation": "Confirm.Intent.562993077507"
-          },
-          "slots": [
-            {
-              "name": "day",
-              "type": "AMAZON.NUMBER",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.653974572406.1040382425372"
+      "languageModel": {
+          "invocationName": "memoria amica",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
               },
-              "validations": [
-                {
-                  "type": "isGreaterThanOrEqualTo",
-                  "prompt": "Slot.Validation.190694681136.1424851421300.1030431910159",
-                  "value": "1"
-                },
-                {
-                  "type": "isLessThanOrEqualTo",
-                  "prompt": "Slot.Validation.190694681136.1424851421300.837658517617",
-                  "value": "31"
-                }
-              ]
-            },
-            {
-              "name": "month",
-              "type": "MonthType",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.282358190483.487594834711"
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
               },
-              "validations": [
-                {
-                  "type": "hasEntityResolutionMatch",
-                  "prompt": "Slot.Validation.190694681136.463018349705.1461889218555"
-                }
-              ]
-            },
-            {
-              "name": "year",
-              "type": "AMAZON.FOUR_DIGIT_NUMBER",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.1253554922892.1358447173887"
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": [
+                      "chiudi ",
+                      "fine sessione",
+                      "esci",
+                      "stop"
+                  ]
               },
-              "validations": [
-                {
-                  "type": "isGreaterThan",
-                  "prompt": "Slot.Validation.1253554922892.1358447173887.1026742417738",
-                  "value": "1900"
-                },
-                {
-                  "type": "isLessThan",
-                  "prompt": "Slot.Validation.1253554922892.1358447173887.176185058059",
-                  "value": "2020"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "RemindBirthdayIntent",
-          "confirmationRequired": true,
-          "prompts": {
-            "confirmation": "Confirm.Intent.556115415325"
-          },
-          "slots": [
-            {
-              "name": "message",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.556115415325.557149889298"
-              }
-            },
-            {
-              "name": "date",
-              "type": "AMAZON.DATE",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.1165654406296.872514788481"
-              }
-            },
-            {
-              "name": "time",
-              "type": "AMAZON.TIME",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.1165654406296.1548993670484"
-              }
-            }
-          ]
-        },
-        {
-          "name": "GoOutIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": []
-        },
-        {
-          "name": "ContinueIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "responseYN",
-              "type": "YesNo",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.1391564424065.1158537818521"
-              }
-            }
-          ]
-        },
-        {
-          "name": "SetTimerIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "duration",
-              "type": "AMAZON.DURATION",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.144347225484.737098379773"
-              }
-            },
-            {
-              "name": "tmessage",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.1094128184062.1214660465851"
-              }
-            }
-          ]
-        },
-        {
-          "name": "SupplyIntent",
-          "confirmationRequired": true,
-          "prompts": {
-            "confirmation": "Confirm.Intent.239769842942"
-          },
-          "slots": []
-        },
-        {
-          "name": "ActivityIntent",
-          "confirmationRequired": true,
-          "prompts": {
-            "confirmation": "Confirm.Intent.1088670893731"
-          },
-          "slots": []
-        },
-        {
-          "name": "DementiaInfoIntent",
-          "confirmationRequired": true,
-          "prompts": {
-            "confirmation": "Confirm.Intent.1146786050198"
-          },
-          "slots": []
-        },
-        {
-          "name": "RegisterSonsNumberIntent",
-          "confirmationRequired": true,
-          "prompts": {
-            "confirmation": "Confirm.Intent.1299780086268"
-          },
-          "slots": [
-            {
-              "name": "sonsNumber",
-              "type": "AMAZON.NUMBER",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.935901033884.1097009276285"
+              {
+                  "name": "RegisterBirthdayIntent",
+                  "slots": [
+                      {
+                          "name": "day",
+                          "type": "AMAZON.NUMBER",
+                          "samples": [
+                              "il {day} {month} {year}",
+                              "il giorno {day}",
+                              "il {day}",
+                              "{day} di {month}",
+                              "il {day} di {month}",
+                              "{day} di {month} {year}",
+                              "il {day} di {month} del {year}"
+                          ]
+                      },
+                      {
+                          "name": "month",
+                          "type": "MonthType",
+                          "samples": [
+                              "di {month} ",
+                              "il {day} {month} {year}",
+                              "a {month}",
+                              "mese di {month}",
+                              "il mese di {month}",
+                              "{day} di {month}",
+                              "il {day} di {month}",
+                              "{day} di {month} del {year}",
+                              "il {day} di {month} del {year}"
+                          ]
+                      },
+                      {
+                          "name": "year",
+                          "type": "AMAZON.FOUR_DIGIT_NUMBER",
+                          "samples": [
+                              "il {day} {month} {year}",
+                              "il {year}",
+                              "del {year}",
+                              "sono nato nel {year}",
+                              "sono nata nel {year}",
+                              "anno {year}",
+                              "nel {year}",
+                              "nell'anno {year}",
+                              "l'anno {year}",
+                              "{day} di {month} del {year}",
+                              "il {day} di {month} del {year}",
+                              "{month} di {year}",
+                              "a {month} del {year}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "cambia generalità",
+                      "modifica data di nascita",
+                      "modifica compleanno",
+                      "modifica generalità",
+                      "aggiungi generalità",
+                      "le mie generalità",
+                      "aggiungi la mia data di compleanno",
+                      "aggiungi il mio compleanno",
+                      "la mia data di nascita è il {day} di {month} del {year}",
+                      "la mia data di nascita è il {day} {month} {year}",
+                      "sono nato il {day} {month} {year}",
+                      "il mio compleanno è il {day} {month} {year}",
+                      "ricorda il mio compleanno",
+                      "registra il mio compleanno",
+                      "registra la mia data di nascita",
+                      "ricordati il mio compleanno",
+                      "segnati il mio comple",
+                      "prendi nota del mio comple",
+                      "prendi nota del mio compleanno"
+                  ]
               },
-              "validations": [
-                {
-                  "type": "isLessThanOrEqualTo",
-                  "prompt": "Slot.Validation.1064792462472.541573188957.1306840531787",
-                  "value": "10"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "RegisterSonsNamesIntent",
-          "confirmationRequired": true,
-          "prompts": {
-            "confirmation": "Confirm.Intent.648153978366"
-          },
-          "slots": [
-            {
-              "name": "sonsNames",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.1231175824221.1441313097735"
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "SayBirthdayIntent",
+                  "slots": [],
+                  "samples": [
+                      "quanto manca al compleanno",
+                      "data di nascita",
+                      "dimmi la mia età",
+                      "dimmi la mia data di nascita",
+                      "info età e data di nascita",
+                      "età anagrafica",
+                      "qual è la mia età",
+                      "quand'è il mio compleanno",
+                      "quando sono nato",
+                      "qual è la mia data di nascita",
+                      "il mio prossimo compleanno",
+                      "prossimo compleanno",
+                      "quando è il mio compleanno",
+                      "il mio compleanno",
+                      "quanto manca al mio compleanno",
+                      "giorni al mio compleanno",
+                      "info compleanno",
+                      "dimmi i giorni rimasti al mio compleanno",
+                      "dimmi quanto manca al mio compleanno",
+                      "quanti giorni mancano"
+                  ]
+              },
+              {
+                  "name": "RemindBirthdayIntent",
+                  "slots": [
+                      {
+                          "name": "message",
+                          "type": "AMAZON.SearchQuery",
+                          "samples": [
+                              "andare {message}",
+                              "fare {message}",
+                              "vai {message}",
+                              "fai {message}",
+                              "devo {message}",
+                              "per {message}",
+                              "che {message}",
+                              "{message}"
+                          ]
+                      },
+                      {
+                          "name": "date",
+                          "type": "AMAZON.DATE",
+                          "samples": [
+                              "per il {date}",
+                              "il {date}",
+                              "{date}"
+                          ]
+                      },
+                      {
+                          "name": "time",
+                          "type": "AMAZON.TIME",
+                          "samples": [
+                              "{time}",
+                              "per le {time}",
+                              "alle {time}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "crea un promemoria per {message}",
+                      "imposta un promemoria per {message}",
+                      "nuovo promemoria per {message}",
+                      "programma un appuntamento",
+                      "crea un appuntamento",
+                      "appuntamento",
+                      "promemoria",
+                      "reminder",
+                      "configura un promemoria",
+                      "imposta un promemoria",
+                      "promemoria con il testo {message}",
+                      "configura un reminder con il testo {message}",
+                      "inserisci un reminder con il testo {message}"
+                  ]
+              },
+              {
+                  "name": "DementiaInfoIntent",
+                  "slots": [],
+                  "samples": [
+                      "declino cognitivo",
+                      "Cos'è il declino cognitivo ",
+                      "Cos'è il declino cognitivo lieve",
+                      "declino cognitivo lieve",
+                      "Cosa vuol dire declino cognitivo",
+                      "Approfondire cosa vuol dire demenza ",
+                      "Approfondimento riguardo la malattia",
+                      "Cosa è la demenza e quali sono i suoi sintomi",
+                      "Quali sono i sintomi della demenza",
+                      "Sintomi della demenza",
+                      "Demenza e sintomi",
+                      "Cosa vuol dire deficit cognitivo",
+                      "Cos'è il deficit cognitivo",
+                      "Deficit cognitivo",
+                      "Cos'è la demenza senile",
+                      "Info demenza",
+                      "Demenza senile",
+                      "Cosa vuol dire demenza",
+                      "Voglio sapere di più sulla demenza",
+                      "Voglio informazioni sulla demenza",
+                      "Cos'è la demenza"
+                  ]
+              },
+              {
+                  "name": "AddressIntent",
+                  "slots": [],
+                  "samples": [
+                      "vivo",
+                      "abito",
+                      "casa mia",
+                      "ti ricordi dov'è casa mia",
+                      "vorrei sapere dove abito",
+                      "vorrei sapere il mio indirizzo postale",
+                      "il mio indirizzo",
+                      "indirizzo di residenza",
+                      "dove si trova casa mia",
+                      "dove si trova la mia abitazione",
+                      "qual'è il mio domicilio",
+                      "qual'è la mia residenza",
+                      "dove risiedo",
+                      "in che via si trova casa mia",
+                      "in che via abito",
+                      "dov'è casa mia",
+                      "dove abito",
+                      "dove sono",
+                      "dove mi trovo"
+                  ]
+              },
+              {
+                  "name": "NumberIntent",
+                  "slots": [],
+                  "samples": [
+                      "numero di cellulare",
+                      "numero di telefono",
+                      "telefono cellulare",
+                      "dimmi il mio numero di telefono",
+                      "dimmi il mio numero di cellulare",
+                      "dimmi il mio numero ",
+                      "a che numero di telefono è associato questo account",
+                      "mi diresti il mio numero di cellulare",
+                      "il mio numero di cellulare",
+                      "il mio numero di telefono",
+                      "a che numero di telefono è associato il dispositivo",
+                      "quale è il mio cellulare",
+                      "potresti aiutarmi con il mio numero di telefono",
+                      "non ricordo il mio telefono",
+                      "potrei sapere il mio numero di telefono",
+                      "vorrei sapere il mio numero",
+                      "vorrei sapere il mio numero di cellulare",
+                      "ho dimenticato il mio numero",
+                      "mi dici il mio numero di cellulare",
+                      "qual'è il mio numero di telefono"
+                  ]
+              },
+              {
+                  "name": "EmailIntent",
+                  "slots": [],
+                  "samples": [
+                      "posta elettronica",
+                      "mail",
+                      "email",
+                      "qual'è il mio indirizzo email",
+                      "vorrei sapere il mio indirizzo di posta elettronica",
+                      "qual'è il mio indirizzo di posta elettronica",
+                      "indirizzo di posta elettronica",
+                      "potrei sapere il mio indirizzo mail",
+                      "a quale indirizzo email sei associata",
+                      "a quale indirizzo mail è associato il mio account",
+                      "mi diresti il mio indirizzo mail",
+                      "mi dici il mio indirizzo email",
+                      "indirizzo mail",
+                      "indirizzo email",
+                      "qual'è la mia mail",
+                      "quale è il mio indirizzo email"
+                  ]
+              },
+              {
+                  "name": "RelaxIntent",
+                  "slots": [],
+                  "samples": [
+                      "rilassarmi",
+                      "rilassare",
+                      "relax",
+                      "consigli su come rilassarmi",
+                      "consigli per rilassarmi",
+                      "consigli per il relax",
+                      "come posso rilassarmi"
+                  ]
+              },
+              {
+                  "name": "SupplyIntent",
+                  "slots": [],
+                  "samples": [
+                      "consigli per una dieta sana ed equilibrata",
+                      "consigli per una dieta sana",
+                      "consigli per una dieta equilibrata",
+                      "dieta sana",
+                      "dieta equilibrata",
+                      "mangiare meglio",
+                      "vorrei sapere come mangiare meglio",
+                      "vorrei sapere come mangiare in modo equilibrato",
+                      "vorrei sapere come mangiare equilibrato",
+                      "vorrei sapere come mangiare bene",
+                      "vorrei sapere come mangiare sano",
+                      "mangiare sano",
+                      "consigli per mangiare",
+                      "mangiare bene",
+                      "consigli per un alimentazione equilibrata",
+                      "alimentazione equilibrata",
+                      "alimentazione sana",
+                      "alimentazione",
+                      "consigli per mangiare sano",
+                      "consigli per mangiare bene",
+                      "consigli per l' alimentazione",
+                      "consigli sull'alimentazione"
+                  ]
+              },
+              {
+                  "name": "ActivityIntent",
+                  "slots": [],
+                  "samples": [
+                      "consigli per il benessere quotidiano",
+                      "benessere quotidiano",
+                      "benessere",
+                      "attività di benessere",
+                      "attività per il benessere",
+                      "dimmi di più su attività per il benessere",
+                      "consigli su attività che favoriscano il benessere",
+                      "vorrei dei consigli per attività che favoriscano il benessere",
+                      "vorrei dei consigli sulle attività che favoriscano il benessere",
+                      "consigli per attività che favoriscano il benessere",
+                      "attività fisica",
+                      "attività che favoriscano il benessere"
+                  ]
+              },
+              {
+                  "name": "GoOutIntent",
+                  "slots": [],
+                  "samples": [
+                      "cose da prendere prima di uscire",
+                      "cosa potrei dimenticarmi",
+                      "cosa potrei dimenticare",
+                      "cose da fare prima di uscire",
+                      "esco",
+                      "vado via",
+                      "io esco",
+                      "sono pronto per andare",
+                      "sono pronta per andare",
+                      "ricordami cosa devo prendere prima di uscire",
+                      "sto andando via",
+                      "Sto uscendo"
+                  ]
+              },
+              {
+                  "name": "ContinueIntent",
+                  "slots": [
+                      {
+                          "name": "responseYN",
+                          "type": "YesNo"
+                      }
+                  ],
+                  "samples": [
+                      "{responseYN}",
+                      "{responseYN} voglio sapere altro",
+                      "{responseYN} ricordami altro",
+                      "{responseYN} dimmi di più",
+                      "{responseYN} dimmi altro",
+                      "{responseYN} basta così",
+                      "{responseYN} non voglio sapere altro",
+                      "{responseYN} non mi ricordare altro"
+                  ]
+              },
+              {
+                  "name": "ReadTimerIntent",
+                  "slots": [],
+                  "samples": [
+                      "stato timer",
+                      "stato timers",
+                      "controlla timers",
+                      "controlla i miei timers",
+                      "controlla il mio timer",
+                      "controlla timer",
+                      "leggi il mio timer",
+                      "controllo timer",
+                      "stato del timer",
+                      "qual è lo stato del mio timer",
+                      "tempo rimasto",
+                      "qual è il tempo rimanente",
+                      "quanto tempo manca",
+                      "facciamo un controllo orario"
+                  ]
+              },
+              {
+                  "name": "SetTimerIntent",
+                  "slots": [
+                      {
+                          "name": "duration",
+                          "type": "AMAZON.DURATION",
+                          "samples": [
+                              "fra {duration}",
+                              "tra {duration}",
+                              "per {duration}",
+                              "di {duration}",
+                              "da {duration}",
+                              "{duration}",
+                              "è di {duration}"
+                          ]
+                      },
+                      {
+                          "name": "tmessage",
+                          "type": "AMAZON.SearchQuery",
+                          "samples": [
+                              "fare {tmessage}",
+                              "devo {tmessage}",
+                              "per {tmessage}",
+                              "{tmessage}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "ricordami che {tmessage}",
+                      "imposta un timer con il messaggio {tmessage}",
+                      "impostaun timer per {tmessage}",
+                      "ricordami di  {tmessage}",
+                      "ricordami tra {duration}",
+                      "{duration} timer",
+                      "imposta un timer di {duration}",
+                      "imposta un timer da {duration}",
+                      "imposta un timer per {duration}",
+                      "imposta un timer tra {duration}",
+                      "crea un timer di {duration}",
+                      "crea un timer da {duration}",
+                      "crea un timer per {duration}",
+                      "crea un timer tra {duration}",
+                      "timer di {duration}",
+                      "timer",
+                      "voglio impostare un timer",
+                      "crea un timer",
+                      "imposta timer",
+                      "imposta un timer",
+                      "crea timer"
+                  ]
+              },
+              {
+                  "name": "DeleteTimerIntent",
+                  "slots": [],
+                  "samples": [
+                      "distruggi il mio timer",
+                      "rimuovi il mio timer",
+                      "elimina il mio timer",
+                      "cancella il mio timer",
+                      "distruggi timer",
+                      "rimuovi timer",
+                      "elimina timer",
+                      "cancella timer"
+                  ]
+              },
+              {
+                  "name": "AMAZON.PauseIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.ResumeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "PauseTimerIntent",
+                  "slots": [],
+                  "samples": [
+                      "metti in pausa il timer",
+                      "pausa timer",
+                      "blocca i miei timer",
+                      "sospendi i timers",
+                      "sospendi timers",
+                      "sospendi timer",
+                      "sospendi i miei timers",
+                      "ferma tutti i miei timers",
+                      "ferma tutti i timers",
+                      "ferma i timers",
+                      "stoppa timers",
+                      "stoppa tutti i timers",
+                      "stoppa timer",
+                      "ferma il timer",
+                      "ferma il mio timer",
+                      "stoppa il mio timer",
+                      "metti in pausa il mio timer"
+                  ]
+              },
+              {
+                  "name": "ResumeTimerIntent",
+                  "slots": [],
+                  "samples": [
+                      "continua il timer",
+                      "continua i timers",
+                      "riavvia timers",
+                      "riavvia timer",
+                      "riavvia i miei timers",
+                      "riavvia il mio timer",
+                      "riesegui il mio timer",
+                      "continua timers",
+                      "continua timer",
+                      "continua i miei timers",
+                      "continua il mio timer",
+                      "riprendi timers",
+                      "riprendi i miei timers",
+                      "riprendi timer",
+                      "riprendi il mio timer"
+                  ]
+              },
+              {
+                  "name": "ActivityAdviceIntent",
+                  "slots": [],
+                  "samples": [
+                      "attività da fare",
+                      "attività da svolgere",
+                      "consigli su cosa fare",
+                      "consiglio su cosa fare",
+                      "suggerimento",
+                      "consiglio",
+                      "consigli sulle attività",
+                      "suggerimenti",
+                      "consigli",
+                      "suggerimenti sulle attività",
+                      "consigli sull'attività fisica"
+                  ]
+              },
+              {
+                  "name": "RegisterSonsNumberIntent",
+                  "slots": [
+                      {
+                          "name": "sonsNumber",
+                          "type": "AMAZON.NUMBER",
+                          "samples": [
+                              "{sonsNumber} figlio",
+                              "{sonsNumber} figlie",
+                              "{sonsNumber} figli",
+                              "da {sonsNumber} figlie",
+                              "siamo {sonsNumber} figlie",
+                              "sono {sonsNumber} figlio",
+                              "ho {sonsNumber} figlio",
+                              "ho {sonsNumber} figlie",
+                              "ho {sonsNumber} figli",
+                              "{sonsNumber}",
+                              "da {sonsNumber} figli",
+                              "da {sonsNumber}",
+                              "siamo {sonsNumber} figli",
+                              "la nostra famiglia è composta da {sonsNumber} figli"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "cambia numero figli",
+                      "cambia il numero delle figlie",
+                      "cambia il numero dei figli",
+                      "cambia il numero dei miei figli",
+                      "modifica numero figlio",
+                      "modifica numero figlie",
+                      "modifica il numero delle figlie",
+                      "ricordati il numero delle mie figlie",
+                      "registra il numero delle mie figlie che è {sonsNumber}",
+                      "registra il numero dei miei figli che è {sonsNumber}",
+                      "modifica il numero dei miei figli in {sonsNumber}",
+                      "registra il numero dei miei figli",
+                      "prendi nota del numero figli",
+                      "modifica numero figli",
+                      "registra numero figli",
+                      "registra numero dei figli",
+                      "modifica numero dei figli"
+                  ]
+              },
+              {
+                  "name": "SaySonsNumberIntent",
+                  "slots": [],
+                  "samples": [
+                      "quanti sono",
+                      "quante sono le mie figlie",
+                      "quanti sono i miei figli",
+                      "numero figlie",
+                      "numero figli",
+                      "il numero dei miei figli",
+                      "qual'è il numero dei figli",
+                      "qual'è il numero dei miei figli",
+                      "quanti figli ho",
+                      "dimmi quanti figli ho"
+                  ]
+              },
+              {
+                  "name": "RegisterSonsNamesIntent",
+                  "slots": [
+                      {
+                          "name": "sonsNames",
+                          "type": "AMAZON.SearchQuery",
+                          "samples": [
+                              "{sonsNames}",
+                              "i nostri nomi sono {sonsNames}",
+                              "è {sonsNames}",
+                              "il nome è {sonsNames}",
+                              "i nomi sono {sonsNames}",
+                              "sono {sonsNames}",
+                              "siamo {sonsNames}",
+                              "ci chiamiamo {sonsNames}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "modifica nomi figlie",
+                      "registra il nome di mia figlia",
+                      "registra il nome di mio figlio",
+                      "registra i nomi delle mie figlie",
+                      "prendi nota dei nomi",
+                      "prendi nota del nome",
+                      "modifica il nome",
+                      "modifica i nomi ",
+                      "i nomi delle mie figlie sono {sonsNames}",
+                      "il nome di mia figlia è {sonsNames}",
+                      "il nome di mio figlio è {sonsNames}",
+                      "i nomi dei miei figli sono {sonsNames}",
+                      "ricordati i nomi dei miei figli",
+                      "ricordati i nomi dei figli",
+                      "prendi nota dei nomi figli",
+                      "prendi nota dei nomi dei figli",
+                      "prendi nota dei nomi dei miei figli",
+                      "modifica nomi figli",
+                      "registra nomi figli",
+                      "modifica i nomi dei miei figli",
+                      "registra i nomi dei miei figli"
+                  ]
+              },
+              {
+                  "name": "SaySonsNamesIntent",
+                  "slots": [],
+                  "samples": [
+                      "come si chiamano",
+                      "come si chiama",
+                      "quali sono i nomi",
+                      "qual è il nome",
+                      "dimmi quali sono i nomi delle mie figlie",
+                      "dimmi quali sono i nomi ",
+                      "dimmi qual è il nome di mia figlia",
+                      "nomi figlie",
+                      "nome figlia",
+                      "quali sono i nomi dei miei figli",
+                      "qual è il nome di mio figlio",
+                      "come si chiamano i miei figli",
+                      "come si chiama mio figlio",
+                      "dimmi qual è il nome di mio figlio",
+                      "dimmi quali sono i nomi dei miei figli",
+                      "nome figlio",
+                      "nomi figli"
+                  ]
+              },
+              {
+                  "name": "RegisterEmergencyContactIntent",
+                  "slots": [
+                      {
+                          "name": "emergencyContact",
+                          "type": "AMAZON.NUMBER",
+                          "samples": [
+                              "il mio contatto di emergenza è {emergencyContact}",
+                              "è {emergencyContact}",
+                              "il contatto di emergenza è {emergencyContact}",
+                              "{emergencyContact}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "registrare contatto emergenza",
+                      "cambiare contatto emergenza",
+                      "modificare contatto emergenza",
+                      "aggiornare contatto emergenza",
+                      "aggiorna contatto emergenza",
+                      "aggiorna numero emergenza",
+                      "aggiornare numero emergenza",
+                      "modificare numero emergenza",
+                      "cambiare numero emergenza",
+                      "registrare numero emergenza",
+                      "registra numero emergenza",
+                      "registra il numero di emergenza",
+                      "cambia numero emergenza",
+                      "cambia il numero emergenza",
+                      "cambia numero di emergenza",
+                      "cambia il numero di emergenza",
+                      "modifica numero di emergenza",
+                      "modifica il numero emergenza",
+                      "modifica il numero di emergenza",
+                      "modifica numero emergenza",
+                      "aggiungi numero emergenza",
+                      "aggiungi il numero emergenza",
+                      "aggiungi numero di emergenza",
+                      "aggiungi il numero di emergenza",
+                      "cambia contatto di emergenza",
+                      "cambia il contatto emergenza",
+                      "modifica il contatto emergenza",
+                      "modifica contatto di emergenza",
+                      "registra contatto di emergenza",
+                      "registra il contatto emergenza",
+                      "scrivi il contatto emergenza",
+                      "scrivi contatto di emergenza",
+                      "aggiungi il contatto di emergenza",
+                      "aggiungi il contatto emergenza",
+                      "nuovo contatto emergenza",
+                      "scrivi contatto emergenza",
+                      "cambia contatto emergenza",
+                      "aggiungi contatto emergenza",
+                      "modifica contatto emergenza",
+                      "registra contatto emergenza",
+                      "nuovo contatto di emergenza",
+                      "scrivi il contatto di emergenza",
+                      "cambia il contatto di emergenza",
+                      "modifica il contatto di emergenza",
+                      "registra il contatto di emergenza"
+                  ]
+              },
+              {
+                  "name": "SayEmergencyContactIntent",
+                  "slots": [],
+                  "samples": [
+                      "qual è il mio contatto emergenza",
+                      "qual è il contatto emergenza",
+                      "qual è il mio numero di emergenza",
+                      "qual è il numero di emergenza",
+                      "dimmi il mio numero di emergenza",
+                      "dimmi il mio contatto di emergenza",
+                      "dimmi qual è il numero di emergenza",
+                      "dimmi qual è il contatto di emergenza",
+                      "dimmi il contatto di emergenza",
+                      "dimmi il numero di emergenza",
+                      "contatto emergenza",
+                      "numero emergenza",
+                      "numero di emergenza",
+                      "contatto di emergenza",
+                      "qual è il mio contatto di emergenza"
+                  ]
+              },
+              {
+                  "name": "FirstGameIntent",
+                  "slots": [],
+                  "samples": [
+                      "primo esercizio",
+                      "esercizio uno",
+                      "giochiamo con la memoria linguistica",
+                      "facciamo il primo gioco",
+                      "apri il primo gioco",
+                      "giochiamo insieme",
+                      "giochiamo ",
+                      "vorrei fare un gioco per la memoria",
+                      "voglio fare un esercizio per la memoria",
+                      "voglio fare un gioco per la memoria",
+                      "primo gioco",
+                      "gioco uno",
+                      "vorrei fare esercizi per la memoria",
+                      "vorrei esercitarmi",
+                      "voglio esercitarmi",
+                      "voglio fare un esercizio",
+                      "memoria linguistica",
+                      "gioco di memoria linguistica"
+                  ]
+              },
+              {
+                  "name": "AMAZON.RepeatIntent",
+                  "samples": [
+                      "non ho capito le parole",
+                      "non ho capito tutte le parole",
+                      "non ho capito ",
+                      "ripeti le parole",
+                      "puoi ripetere",
+                      "ripetere",
+                      "ripeti per favore",
+                      "ripeti"
+                  ]
+              },
+              {
+                  "name": "SecondGameIntent",
+                  "slots": [],
+                  "samples": [
+                      "leggi il testo ",
+                      "lettura",
+                      "testo",
+                      "esercizio di comprensione",
+                      "esercizio di storia",
+                      "gioco per la memoria semantica",
+                      "memoria semantica",
+                      "tema con domande",
+                      "tema",
+                      "seconda guerra mondiale",
+                      "storia",
+                      "gioco due",
+                      "secondo gioco"
+                  ]
+              },
+              {
+                  "name": "FirstQuestionIntent",
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "samples": [
+                              "non me lo ricordo",
+                              "non so",
+                              "non mi ricordo",
+                              "non lo ricordo",
+                              "non ricordo",
+                              "non lo so",
+                              "era composto da {response}",
+                              "dalle nazioni {response}",
+                              "da {response}",
+                              "{response}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "domanda uno",
+                      "inizia domande",
+                      "prima domanda"
+                  ]
+              },
+              {
+                  "name": "SecondQuestionIntent",
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "samples": [
+                              "non me lo ricordo",
+                              "non lo ricordo",
+                              "non mi ricordo",
+                              "non ricordo",
+                              "non so",
+                              "non lo so",
+                              "gli alleati erano {response}",
+                              "erano {response}",
+                              "{response}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "domanda due",
+                      "seconda domanda"
+                  ]
+              },
+              {
+                  "name": "ThirdQuestionIntent",
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "samples": [
+                              "non me lo ricordo",
+                              "non ricordo",
+                              "non lo ricordo",
+                              "non mi ricordo",
+                              "non so",
+                              "non lo so",
+                              "invase la nazione della {response}",
+                              "invase la {response}",
+                              "la {response}",
+                              "{response}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "domanda tre",
+                      "terza domanda"
+                  ]
+              },
+              {
+                  "name": "FourthQuestionIntent",
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "samples": [
+                              "non me lo ricordo",
+                              "non ricordo",
+                              "non lo ricordo",
+                              "non mi ricordo",
+                              "non so",
+                              "non lo so",
+                              "{response}",
+                              "l'italia era governata da {response}",
+                              "la governava {response}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "domanda quattro",
+                      "quarta domanda"
+                  ]
+              },
+              {
+                  "name": "FifthQuestionIntent",
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "samples": [
+                              "non lo ricordo",
+                              "non mi ricordo",
+                              "non me lo ricordo",
+                              "non ricordo",
+                              "non so",
+                              "non lo so ",
+                              "il partito {response}",
+                              "{response}",
+                              "il {response}",
+                              "benito mussolini fondò il partito {response}",
+                              "benito mussolini fondò il {response}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "domanda cinque",
+                      "quinta domanda"
+                  ]
+              },
+              {
+                  "name": "SixthQuestionIntent",
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "samples": [
+                              "non mi ricordo",
+                              "non lo ricordo",
+                              "non me lo ricordo",
+                              "non ricordo",
+                              "non so",
+                              "non lo so",
+                              "{response}",
+                              "della {response}",
+                              "di {response}",
+                              "il re di {response}",
+                              "il re della {response}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "domanda sei",
+                      "sesta domanda"
+                  ]
+              },
+              {
+                  "name": "SeventhQuestionIntent",
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "samples": [
+                              "non lo ricordo",
+                              "non me lo ricordo",
+                              "non so",
+                              "non lo so",
+                              "non mi ricordo",
+                              "non ricordo",
+                              "Mussolini fu liberato da {response}",
+                              "fu {response}",
+                              "lo liberò {response}",
+                              "{response}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "domanda sette",
+                      "settima domanda"
+                  ]
+              },
+              {
+                  "name": "EighthQuestionIntent",
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "samples": [
+                              "non me lo ricordo",
+                              "non lo ricordo",
+                              "non mi ricordo",
+                              "non ricordo",
+                              "non lo so",
+                              "non so",
+                              "{response}",
+                              "dai {response}",
+                              "era formata dai {response}",
+                              "era formata da {response}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "domanda otto",
+                      "ottava domanda"
+                  ]
+              },
+              {
+                  "name": "NinthQuestionIntent",
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "samples": [
+                              "non lo ricordo",
+                              "non mi ricordo",
+                              "non me lo ricordo",
+                              "non ricordo",
+                              "non so",
+                              "non lo so",
+                              "{response}",
+                              "morì {response}",
+                              "venne {response}",
+                              "fu {response}",
+                              "egli {response}",
+                              "Mussolini {response}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "domanda nove",
+                      "nona domanda"
+                  ]
+              },
+              {
+                  "name": "TenthQuestionIntent",
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "samples": [
+                              "non lo ricordo",
+                              "non me lo ricordo",
+                              "non ricordo",
+                              "non mi ricordo",
+                              "non lo so",
+                              "non so",
+                              "il venticinque aprile in italia si festeggia {response}",
+                              "il venticinque aprile si festeggia {response}",
+                              "{response}",
+                              "l' {response}",
+                              "festeggiamo {response}",
+                              "si festeggia {response}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "domanda dieci",
+                      "decima domanda"
+                  ]
+              },
+              {
+                  "name": "SecondGameTwoIntent",
+                  "slots": [],
+                  "samples": [
+                      "potrei riascoltare la seconda parte",
+                      "vorrei riascoltare la seconda parte",
+                      "vorrei ascoltare la seconda parte ",
+                      "seconda parte del testo",
+                      "seconda parte del tema",
+                      "mi puoi leggere la seconda parte della storia",
+                      "mi puoi leggere la seconda parte del tema",
+                      "inizia seconda parte della storia",
+                      "seconda parte della storia",
+                      "leggi seconda parte del testo"
+                  ]
+              },
+              {
+                  "name": "AMAZON.MoreIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateSettingsIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NextIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.PageUpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.PageDownIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.PreviousIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.ScrollRightIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.ScrollDownIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.ScrollLeftIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.ScrollUpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "PoemPlayerIntent",
+                  "slots": [],
+                  "samples": [
+                      "pillola di bellezza",
+                      "pillola di bellezza quotidiana",
+                      "pillola di bellezza del giorno",
+                      "pillola del giorno",
+                      "poema quotidiano",
+                      "poesia quotidiana",
+                      "pillola quaotidiana",
+                      "pillola quotidiana di bellezza",
+                      "poema del giorno",
+                      "poesia del giorno",
+                      "narrami un poema",
+                      "narra un poema",
+                      "raccontami un poema",
+                      "leggimi un poema",
+                      "leggi un poema",
+                      "racconta un poema",
+                      "racconta una poesia",
+                      "leggimi una poesia",
+                      "narrami una poesia",
+                      "narra una poesia",
+                      "leggi una poesia",
+                      "dimmi una poesia",
+                      "raccontami una poesia"
+                  ]
+              },
+              {
+                  "name": "HelpIntent",
+                  "slots": [],
+                  "samples": [
+                      "aiuta",
+                      "aiutami",
+                      "aiuto",
+                      "cosa puoi fare",
+                      "cosa fare",
+                      "non so cosa fare",
+                      "cosa sai fare",
+                      "cosa fai",
+                      "task",
+                      "funzionalità",
+                      "cosa potrei fare",
+                      "cosa posso fare"
+                  ]
               }
-            }
-          ]
-        },
-        {
-          "name": "RegisterEmergencyContactIntent",
-          "confirmationRequired": true,
-          "prompts": {
-            "confirmation": "Confirm.Intent.1100032036255"
-          },
-          "slots": [
-            {
-              "name": "emergencyContact",
-              "type": "AMAZON.NUMBER",
-              "elicitationRequired": true,
-              "confirmationRequired": true,
-              "prompts": {
-                "confirmation": "Confirm.Slot.1229514012186.1580025894426",
-                "elicitation": "Elicit.Slot.1229514012186.1580025894426"
+          ],
+          "types": [
+              {
+                  "name": "MonthType",
+                  "values": [
+                      {
+                          "id": "12",
+                          "name": {
+                              "value": "dicembre"
+                          }
+                      },
+                      {
+                          "id": "11",
+                          "name": {
+                              "value": "novembre"
+                          }
+                      },
+                      {
+                          "id": "10",
+                          "name": {
+                              "value": "ottobre"
+                          }
+                      },
+                      {
+                          "id": "09",
+                          "name": {
+                              "value": "settembre"
+                          }
+                      },
+                      {
+                          "id": "08",
+                          "name": {
+                              "value": "agosto"
+                          }
+                      },
+                      {
+                          "id": "07",
+                          "name": {
+                              "value": "luglio"
+                          }
+                      },
+                      {
+                          "id": "06",
+                          "name": {
+                              "value": "giugno"
+                          }
+                      },
+                      {
+                          "id": "05",
+                          "name": {
+                              "value": "maggio"
+                          }
+                      },
+                      {
+                          "id": "04",
+                          "name": {
+                              "value": "aprile"
+                          }
+                      },
+                      {
+                          "id": "03",
+                          "name": {
+                              "value": "marzo"
+                          }
+                      },
+                      {
+                          "id": "02",
+                          "name": {
+                              "value": "febbraio"
+                          }
+                      },
+                      {
+                          "id": "01",
+                          "name": {
+                              "value": "gennaio",
+                              "synonyms": [
+                                  "il primo mese dell'anno"
+                              ]
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "YesNo",
+                  "values": [
+                      {
+                          "id": "0",
+                          "name": {
+                              "value": "no",
+                              "synonyms": [
+                                  "no per favore",
+                                  "no grazie"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "1",
+                          "name": {
+                              "value": "si ",
+                              "synonyms": [
+                                  "si per favore",
+                                  "si grazie",
+                                  "va bene",
+                                  "certamente",
+                                  "certo",
+                                  "yes",
+                                  "vai",
+                                  "ok grazie",
+                                  "ok",
+                                  "si"
+                              ]
+                          }
+                      }
+                  ]
               }
-            }
           ]
-        },
-        {
-          "name": "SecondGameIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": []
-        },
-        {
-          "name": "FirstQuestionIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.1276825045668.751511786492"
+      },
+      "dialog": {
+          "intents": [
+              {
+                  "name": "RegisterBirthdayIntent",
+                  "confirmationRequired": true,
+                  "prompts": {
+                      "confirmation": "Confirm.Intent.562993077507"
+                  },
+                  "slots": [
+                      {
+                          "name": "day",
+                          "type": "AMAZON.NUMBER",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.653974572406.1040382425372"
+                          },
+                          "validations": [
+                              {
+                                  "type": "isGreaterThanOrEqualTo",
+                                  "prompt": "Slot.Validation.190694681136.1424851421300.1030431910159",
+                                  "value": "1"
+                              },
+                              {
+                                  "type": "isLessThanOrEqualTo",
+                                  "prompt": "Slot.Validation.190694681136.1424851421300.837658517617",
+                                  "value": "31"
+                              }
+                          ]
+                      },
+                      {
+                          "name": "month",
+                          "type": "MonthType",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.282358190483.487594834711"
+                          },
+                          "validations": [
+                              {
+                                  "type": "hasEntityResolutionMatch",
+                                  "prompt": "Slot.Validation.190694681136.463018349705.1461889218555"
+                              }
+                          ]
+                      },
+                      {
+                          "name": "year",
+                          "type": "AMAZON.FOUR_DIGIT_NUMBER",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1253554922892.1358447173887"
+                          },
+                          "validations": [
+                              {
+                                  "type": "isGreaterThan",
+                                  "prompt": "Slot.Validation.1253554922892.1358447173887.1026742417738",
+                                  "value": "1900"
+                              },
+                              {
+                                  "type": "isLessThan",
+                                  "prompt": "Slot.Validation.1253554922892.1358447173887.176185058059",
+                                  "value": "2020"
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "name": "RemindBirthdayIntent",
+                  "confirmationRequired": true,
+                  "prompts": {
+                      "confirmation": "Confirm.Intent.556115415325"
+                  },
+                  "slots": [
+                      {
+                          "name": "message",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.556115415325.557149889298"
+                          }
+                      },
+                      {
+                          "name": "date",
+                          "type": "AMAZON.DATE",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1165654406296.872514788481"
+                          }
+                      },
+                      {
+                          "name": "time",
+                          "type": "AMAZON.TIME",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1165654406296.1548993670484"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "GoOutIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": []
+              },
+              {
+                  "name": "ContinueIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "responseYN",
+                          "type": "YesNo",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1391564424065.1158537818521"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "SetTimerIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "duration",
+                          "type": "AMAZON.DURATION",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.144347225484.737098379773"
+                          }
+                      },
+                      {
+                          "name": "tmessage",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1094128184062.1214660465851"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "SupplyIntent",
+                  "confirmationRequired": true,
+                  "prompts": {
+                      "confirmation": "Confirm.Intent.239769842942"
+                  },
+                  "slots": []
+              },
+              {
+                  "name": "ActivityIntent",
+                  "confirmationRequired": true,
+                  "prompts": {
+                      "confirmation": "Confirm.Intent.1088670893731"
+                  },
+                  "slots": []
+              },
+              {
+                  "name": "DementiaInfoIntent",
+                  "confirmationRequired": true,
+                  "prompts": {
+                      "confirmation": "Confirm.Intent.1146786050198"
+                  },
+                  "slots": []
+              },
+              {
+                  "name": "RegisterSonsNumberIntent",
+                  "confirmationRequired": true,
+                  "prompts": {
+                      "confirmation": "Confirm.Intent.1299780086268"
+                  },
+                  "slots": [
+                      {
+                          "name": "sonsNumber",
+                          "type": "AMAZON.NUMBER",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.935901033884.1097009276285"
+                          },
+                          "validations": [
+                              {
+                                  "type": "isLessThanOrEqualTo",
+                                  "prompt": "Slot.Validation.1064792462472.541573188957.1306840531787",
+                                  "value": "10"
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "name": "RegisterSonsNamesIntent",
+                  "confirmationRequired": true,
+                  "prompts": {
+                      "confirmation": "Confirm.Intent.648153978366"
+                  },
+                  "slots": [
+                      {
+                          "name": "sonsNames",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1231175824221.1441313097735"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "RegisterEmergencyContactIntent",
+                  "confirmationRequired": true,
+                  "prompts": {
+                      "confirmation": "Confirm.Intent.1100032036255"
+                  },
+                  "slots": [
+                      {
+                          "name": "emergencyContact",
+                          "type": "AMAZON.NUMBER",
+                          "confirmationRequired": true,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "confirmation": "Confirm.Slot.1229514012186.1580025894426",
+                              "elicitation": "Elicit.Slot.1229514012186.1580025894426"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "SecondGameIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": []
+              },
+              {
+                  "name": "FirstQuestionIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1276825045668.751511786492"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "SecondQuestionIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.571025291641.1576840049670"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "ThirdQuestionIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.737948785928.1109607819699"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "FourthQuestionIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1375257770440.842315913015"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "FifthQuestionIntent",
+                  "delegationStrategy": "ALWAYS",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.142024589098.270851620072"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "SixthQuestionIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1307863343052.1395752523773"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "SeventhQuestionIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.547035164221.692933438541"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "EighthQuestionIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.950942090834.1347050208287"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "NinthQuestionIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.582510091105.66593311833"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "TenthQuestionIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "response",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1265832988962.261328062187"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "HelpIntent",
+                  "confirmationRequired": true,
+                  "prompts": {
+                      "confirmation": "Confirm.Intent.16299831386"
+                  },
+                  "slots": []
               }
-            }
-          ]
-        },
-        {
-          "name": "SecondQuestionIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.571025291641.1576840049670"
-              }
-            }
-          ]
-        },
-        {
-          "name": "ThirdQuestionIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.737948785928.1109607819699"
-              }
-            }
-          ]
-        },
-        {
-          "name": "FourthQuestionIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.1375257770440.842315913015"
-              }
-            }
-          ]
-        },
-        {
-          "name": "FifthQuestionIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.142024589098.270851620072"
-              }
-            }
           ],
           "delegationStrategy": "ALWAYS"
-        },
-        {
-          "name": "SixthQuestionIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.1307863343052.1395752523773"
-              }
-            }
-          ]
-        },
-        {
-          "name": "SeventhQuestionIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.547035164221.692933438541"
-              }
-            }
-          ]
-        },
-        {
-          "name": "EighthQuestionIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.950942090834.1347050208287"
-              }
-            }
-          ]
-        },
-        {
-          "name": "NinthQuestionIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.582510091105.66593311833"
-              }
-            }
-          ]
-        },
-        {
-          "name": "TenthQuestionIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "response",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.1265832988962.261328062187"
-              }
-            }
-          ]
-        },
-        {
-          "name": "HelpIntent",
-          "confirmationRequired": true,
-          "prompts": {
-            "confirmation": "Confirm.Intent.16299831386"
-          },
-          "slots": []
-        }
-      ],
-      "delegationStrategy": "ALWAYS"
-    },
-    "prompts": [
-      {
-        "id": "Elicit.Slot.653974572406.1040382425372",
-        "variations": [
+      },
+      "prompts": [
           {
-            "type": "PlainText",
-            "value": "Ok sei nato nel {year} , ma che giorno?"
+              "id": "Elicit.Slot.653974572406.1040382425372",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Ok sei nato nel {year} , ma che giorno?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Ok, {month} ma quale giorno?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Puoi dirmi quale giorno del mese sei nato di preciso?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Potresti dirmi quale giorno del mese sei nato?"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Ok, {month} ma quale giorno?"
+              "id": "Elicit.Slot.282358190483.487594834711",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Va bene, sei nato nel {year} . Ma in quale mese, di preciso?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Ora dimmi il mese in cui sei nato"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Capito, sei nato il {day}. Di quale mese?"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Puoi dirmi quale giorno del mese sei nato di preciso?"
+              "id": "Slot.Validation.190694681136.1424851421300.1030431910159",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Per favore dimmi un numero maggiore o uguale a uno."
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Potresti dirmi quale giorno del mese sei nato?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.282358190483.487594834711",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Va bene, sei nato nel {year} . Ma in quale mese, di preciso?"
+              "id": "Slot.Validation.190694681136.1424851421300.837658517617",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Per favore dimmi un numero minore o uguale a uno."
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Ora dimmi il mese in cui sei nato"
+              "id": "Slot.Validation.190694681136.463018349705.1461889218555",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Per favore dimmi un mese valido."
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Capito, sei nato il {day}. Di quale mese?"
-          }
-        ]
-      },
-      {
-        "id": "Slot.Validation.190694681136.1424851421300.1030431910159",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Per favore dimmi un numero maggiore o uguale a uno."
-          }
-        ]
-      },
-      {
-        "id": "Slot.Validation.190694681136.1424851421300.837658517617",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Per favore dimmi un numero minore o uguale a uno."
-          }
-        ]
-      },
-      {
-        "id": "Slot.Validation.190694681136.463018349705.1461889218555",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Per favore dimmi un mese valido."
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.1253554922892.1358447173887",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Potresti dirmi l\u0027anno in cui sei nato?"
+              "id": "Elicit.Slot.1253554922892.1358447173887",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Potresti dirmi l'anno in cui sei nato?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Va bene, sei nato a {month}, ma di che anno?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Ok. Il {day} di {month} . Di che anno?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Dimmi ora il tuo anno di nascita, per favore."
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Va bene, sei nato a {month}, ma di che anno?"
+              "id": "Slot.Validation.1253554922892.1358447173887.1026742417738",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Mhh, non penso tu abbia cosi tanti anni. Prova di nuovo"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Ok. Il {day} di {month} . Di che anno?"
+              "id": "Slot.Validation.1253554922892.1358447173887.176185058059",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Mhh, non credo che tu abbia cosi pochi anni. Prova di nuovo"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Dimmi ora il tuo anno di nascita, per favore."
-          }
-        ]
-      },
-      {
-        "id": "Slot.Validation.1253554922892.1358447173887.1026742417738",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Mhh, non penso tu abbia cosi tanti anni. Prova di nuovo"
-          }
-        ]
-      },
-      {
-        "id": "Slot.Validation.1253554922892.1358447173887.176185058059",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Mhh, non credo che tu abbia cosi pochi anni. Prova di nuovo"
-          }
-        ]
-      },
-      {
-        "id": "Confirm.Intent.562993077507",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "il {day} di {month} del {year} . Giusto?"
+              "id": "Confirm.Intent.562993077507",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "il {day} di {month} del {year} . Giusto?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Confermi che la data è il {day} di {month} del {year} ?"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Confermi che la data è il {day} di {month} del {year} ?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.556115415325.557149889298",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Cosa vuoi che ti ricordi?"
+              "id": "Elicit.Slot.556115415325.557149889298",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Cosa vuoi che ti ricordi?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Qual è il messaggio del promemoria?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Ottimo, dimmi il contenuto del promemoria"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Qual è il messaggio del promemoria?"
+              "id": "Confirm.Intent.556115415325",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Registrerò come promemoria il seguente messaggio {message} per il {date} alle {time} Giusto?"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Ottimo, dimmi il contenuto del promemoria"
-          }
-        ]
-      },
-      {
-        "id": "Confirm.Intent.556115415325",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Registrerò come promemoria il seguente messaggio {message} per il {date} alle {time} Giusto?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.1391564424065.1158537818521",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Puoi dirmi si o no"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.144347225484.737098379773",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Dimmi la durata del timer, cioè tra quanto vuoi che suoni?"
+              "id": "Elicit.Slot.1391564424065.1158537818521",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Puoi dirmi si o no"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Puoi dirmi tra quanto tempo vuoi che suoni il timer?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.1165654406296.872514788481",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Ok, ora dimmi la data."
+              "id": "Elicit.Slot.144347225484.737098379773",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Dimmi la durata del timer, cioè tra quanto vuoi che suoni?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Puoi dirmi tra quanto tempo vuoi che suoni il timer?"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Per quale giorno?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.1165654406296.1548993670484",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Ok, a che ora preferisci che te lo ricordi?"
+              "id": "Elicit.Slot.1165654406296.872514788481",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Ok, ora dimmi la data."
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Per quale giorno?"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Perfetto, per che ora vuoi che te lo ricordi?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.1094128184062.1214660465851",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Ok, imposto un timer, con quale messaggio?"
+              "id": "Elicit.Slot.1165654406296.1548993670484",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Ok, a che ora preferisci che te lo ricordi?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Perfetto, per che ora vuoi che te lo ricordi?"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Perfetto, cosa vuoi che ti ricordi?"
-          }
-        ]
-      },
-      {
-        "id": "Confirm.Intent.239769842942",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Mangiare bene può far aumentare i livelli di energia, aiutare a contrastare l\u0027affaticamento e risollevare lo spirito. è importante ascoltare le necessità del proprio corpo ed effettuare prove per capire cosa ci fa stare meglio. Una dieta bilanciata potrebbe essere molto utile, per essere equilibrata una dieta deve combinare varietà di cibi diversi derivanti dai principali gruppi alimentari. Vuoi approfondire l\u0027argomento?"
-          }
-        ]
-      },
-      {
-        "id": "Confirm.Intent.1088670893731",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Attività programmate in modo regolare possono contribuire ad essere indipendente, rivolgendo l\u0027attenzione verso compiti utili o piacevoli. È ottimo scegliere attività correlate ai propri interessi. Le attività devono essere piacevoli e offrire degli stimoli. Vuoi che ti dica altro?"
-          }
-        ]
-      },
-      {
-        "id": "Confirm.Intent.1146786050198",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Un deficit cognitivo lieve causa una maggiore perdita di memoria rispetto a quella legata all\u0027età. La demenza è un lento e progressivo declino della funzione mentale che include memoria, pensiero, giudizio e capacità di apprendimento. Può alterare la capacità di usare il linguaggio, di pensare e di utilizzare il buon senso. Tuttavia, come la perdita di memoria legata all\u0027età, questa non agisce sulle capacità funzionali o di svolgere attività quotidiane. Vuoi saperne di più?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.935901033884.1097009276285",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Quanti figli hai?"
+              "id": "Elicit.Slot.1094128184062.1214660465851",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Ok, imposto un timer, con quale messaggio?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Perfetto, cosa vuoi che ti ricordi?"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Da quanti figli è composta la tua famiglia?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.1231175824221.1441313097735",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Potresti dirmi tutti i nomi dei figli?"
+              "id": "Confirm.Intent.239769842942",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Mangiare bene può far aumentare i livelli di energia, aiutare a contrastare l'affaticamento e risollevare lo spirito. è importante ascoltare le necessità del proprio corpo ed effettuare prove per capire cosa ci fa stare meglio. Una dieta bilanciata potrebbe essere molto utile, per essere equilibrata una dieta deve combinare varietà di cibi diversi derivanti dai principali gruppi alimentari. Vuoi approfondire l'argomento?"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Quali sono i nomi dei figli?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.266900940341.1066859014553",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Età dei figli?"
+              "id": "Confirm.Intent.1088670893731",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Attività programmate in modo regolare possono contribuire ad essere indipendente, rivolgendo l'attenzione verso compiti utili o piacevoli. È ottimo scegliere attività correlate ai propri interessi. Le attività devono essere piacevoli e offrire degli stimoli. Vuoi che ti dica altro?"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Quali sono le loro età?"
-          }
-        ]
-      },
-      {
-        "id": "Confirm.Intent.1299780086268",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Nella tua famiglia ci sono {sonsNumber} figli, è corretto?"
+              "id": "Confirm.Intent.1146786050198",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Un deficit cognitivo lieve causa una maggiore perdita di memoria rispetto a quella legata all'età. La demenza è un lento e progressivo declino della funzione mentale che include memoria, pensiero, giudizio e capacità di apprendimento. Può alterare la capacità di usare il linguaggio, di pensare e di utilizzare il buon senso. Tuttavia, come la perdita di memoria legata all'età, questa non agisce sulle capacità funzionali o di svolgere attività quotidiane. Vuoi saperne di più?"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "La famiglia è composta da {sonsNumber} figli, giusto?"
-          }
-        ]
-      },
-      {
-        "id": "Confirm.Intent.648153978366",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "I nomi dei figli sono {sonsNames} . Giusto?"
+              "id": "Elicit.Slot.935901033884.1097009276285",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Quanti figli hai?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Da quanti figli è composta la tua famiglia?"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "I nomi sono {sonsNames} , giusto?"
-          }
-        ]
-      },
-      {
-        "id": "Slot.Validation.1064792462472.541573188957.1306840531787",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Non mi sembra possibile che tu abbia così tanti figli"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.1229514012186.1580025894426",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Qual è il numero che vuoi salvare come contatto di emergenza?"
+              "id": "Elicit.Slot.1231175824221.1441313097735",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Potresti dirmi tutti i nomi dei figli?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Quali sono i nomi dei figli?"
+                  }
+              ]
           },
           {
-            "type": "PlainText",
-            "value": "Ok, ora dimmi il numero di telefono per il contatto di emergenza, per favore"
-          }
-        ]
-      },
-      {
-        "id": "Confirm.Slot.1229514012186.1580025894426",
-        "variations": [
+              "id": "Elicit.Slot.266900940341.1066859014553",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Età dei figli?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Quali sono le loro età?"
+                  }
+              ]
+          },
           {
-            "type": "PlainText",
-            "value": "Il numero è {emergencyContact} . è corretto?"
-          }
-        ]
-      },
-      {
-        "id": "Confirm.Intent.1100032036255",
-        "variations": [
+              "id": "Confirm.Intent.1299780086268",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Nella tua famiglia ci sono {sonsNumber} figli, è corretto?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "La famiglia è composta da {sonsNumber} figli, giusto?"
+                  }
+              ]
+          },
           {
-            "type": "PlainText",
-            "value": "Il contatto di emergenza che vuoi salvare è {emergencyContact} . giusto?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.1276825045668.751511786492",
-        "variations": [
+              "id": "Confirm.Intent.648153978366",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "I nomi dei figli sono {sonsNames} . Giusto?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "I nomi sono {sonsNames} , giusto?"
+                  }
+              ]
+          },
           {
-            "type": "PlainText",
-            "value": " Da quali nazioni era composto il cosiddetto \u0027Asse\u0027 ?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.571025291641.1576840049670",
-        "variations": [
+              "id": "Slot.Validation.1064792462472.541573188957.1306840531787",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Non mi sembra possibile che tu abbia così tanti figli"
+                  }
+              ]
+          },
           {
-            "type": "PlainText",
-            "value": " Chi erano gli \u0027Alleati\u0027 ?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.737948785928.1109607819699",
-        "variations": [
+              "id": "Elicit.Slot.1229514012186.1580025894426",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Qual è il numero che vuoi salvare come contatto di emergenza?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Ok, ora dimmi il numero di telefono per il contatto di emergenza, per favore"
+                  }
+              ]
+          },
           {
-            "type": "PlainText",
-            "value": " Quale nazione invase la Germania di Hitler per scatenare la guerra ?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.142024589098.270851620072",
-        "variations": [
+              "id": "Confirm.Slot.1229514012186.1580025894426",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Il numero è {emergencyContact} . è corretto?"
+                  }
+              ]
+          },
           {
-            "type": "PlainText",
-            "value": "Che partito fondò Benito Mussolini ?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.1375257770440.842315913015",
-        "variations": [
+              "id": "Confirm.Intent.1100032036255",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Il contatto di emergenza che vuoi salvare è {emergencyContact} . giusto?"
+                  }
+              ]
+          },
           {
-            "type": "PlainText",
-            "value": "Chi governava l\u0027Italia quando entrò in guerra ?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.1307863343052.1395752523773",
-        "variations": [
+              "id": "Elicit.Slot.1276825045668.751511786492",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": " Da quali nazioni era composto il cosiddetto 'Asse' ?"
+                  }
+              ]
+          },
           {
-            "type": "PlainText",
-            "value": "Nel millenovecentoquarantatre, il re di quale regione italiana, fece arrestare Mussolini ?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.547035164221.692933438541",
-        "variations": [
+              "id": "Elicit.Slot.571025291641.1576840049670",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": " Chi erano gli 'Alleati' ?"
+                  }
+              ]
+          },
           {
-            "type": "PlainText",
-            "value": "Chi liberò Mussolini dalla prigionia?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.950942090834.1347050208287",
-        "variations": [
+              "id": "Elicit.Slot.737948785928.1109607819699",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": " Quale nazione invase la Germania di Hitler per scatenare la guerra ?"
+                  }
+              ]
+          },
           {
-            "type": "PlainText",
-            "value": "Da chi era formata la Resistenza italiana ?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.582510091105.66593311833",
-        "variations": [
+              "id": "Elicit.Slot.142024589098.270851620072",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Che partito fondò Benito Mussolini ?"
+                  }
+              ]
+          },
           {
-            "type": "PlainText",
-            "value": "Come morì Mussolini ?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.1265832988962.261328062187",
-        "variations": [
+              "id": "Elicit.Slot.1375257770440.842315913015",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Chi governava l'Italia quando entrò in guerra ?"
+                  }
+              ]
+          },
           {
-            "type": "PlainText",
-            "value": "Cosa si festeggia il venticinque aprile, in Italia ?"
-          }
-        ]
-      },
-      {
-        "id": "Confirm.Intent.16299831386",
-        "variations": [
+              "id": "Elicit.Slot.1307863343052.1395752523773",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Nel millenovecentoquarantatre, il re di quale regione italiana, fece arrestare Mussolini ?"
+                  }
+              ]
+          },
           {
-            "type": "PlainText",
-            "value": "Possiamo creare dei timers oppure un nuovo promemoria, posso ricordarti qualsiasi cosa. Inoltre, puoi chiedermi quanti figli hai, quali sono i loro nomi e qual\u0027 è il tuo contatto di emergenza. Se vuoi esercitare la  memoria possiamo fare due giochi, per iniziare puoi dirmi, giochiamo con il primo gioco, oppure, giochiamo con il secondo gioco. Vuoi sapere cos\u0027 altro puoi fare ?"
+              "id": "Elicit.Slot.547035164221.692933438541",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Chi liberò Mussolini dalla prigionia?"
+                  }
+              ]
+          },
+          {
+              "id": "Elicit.Slot.950942090834.1347050208287",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Da chi era formata la Resistenza italiana ?"
+                  }
+              ]
+          },
+          {
+              "id": "Elicit.Slot.582510091105.66593311833",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Come morì Mussolini ?"
+                  }
+              ]
+          },
+          {
+              "id": "Elicit.Slot.1265832988962.261328062187",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Cosa si festeggia il venticinque aprile, in Italia ?"
+                  }
+              ]
+          },
+          {
+              "id": "Confirm.Intent.16299831386",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Possiamo creare dei timers oppure un nuovo promemoria, posso ricordarti qualsiasi cosa. Inoltre, puoi chiedermi quanti figli hai, quali sono i loro nomi e qual' è il tuo contatto di emergenza. Se vuoi esercitare la  memoria possiamo fare due giochi, per iniziare puoi dirmi, giochiamo con il primo gioco, oppure, giochiamo con il secondo gioco. Vuoi sapere cos' altro puoi fare ?"
+                  }
+              ]
           }
-        ]
-      }
-    ]
-  },
-  "version": "214"
+      ]
+  }
 }
