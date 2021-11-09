@@ -196,6 +196,18 @@
               "name": "alexa::alerts:timers:skill:readwrite"
             }
         ],
+        "privacyAndCompliance": {
+            "allowsPurchases": false,
+            "locales": {
+              "it-IT": {
+                "privacyPolicyUrl": "https://www.istitutoitalianoprivacy.it/privacy-policy-e-cookies/"
+              }
+            },
+            "containsAds": false,
+            "isExportCompliant": true,
+            "isChildDirected": false,
+            "usesPersonalInfo": true
+        },
         "manifestVersion": "1.0"
     }
 }
