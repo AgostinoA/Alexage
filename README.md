@@ -1,10 +1,6 @@
 # Friend Memory 2.0 - Alexage
 
-<img style=" display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;"
-src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/merch/2019/AUCC/CXL-345/AEG-featuresbillboard_750x375.jpg" />
+<img style=" display: block;margin-left: auto;margin-right: auto;width: 50%;" src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/merch/2019/AUCC/CXL-345/AEG-featuresbillboard_750x375.jpg" />
 
 This tool seeks to: contribute to improving the quality of life of patients, assisting them as much as possible, at home.
 All this obviously takes place under the supervision of family members and, possibly, of a therapist who have a complete picture of the situation and can manage it in difficult situations. 
