@@ -10,14 +10,14 @@
         "license": "",
         "author": "",
         "dependencies": {
-            "ask-sdk-core": "^2.7.0",
-            "ask-sdk-model": "^1.27.0",
-            "i18next": "^15.0.5",
-            "ask-sdk-s3-persistence-adapter": "^2.7.0",
-            "ask-sdk-dynamodb-persistence-adapter": "^2.7.0",
-            "moment-timezone": "^0.5.25",
-            "aws-sdk": "^2.326.0",
-            "ask-sdk-controls": "^0.2.2"
+            "ask-sdk-core": "^2.11.0",
+            "ask-sdk-model": "^1.37.0",
+            "i18next": "^21.4.2",
+            "ask-sdk-s3-persistence-adapter": "^2.11.0",
+            "ask-sdk-dynamodb-persistence-adapter": "^2.11.0",
+            "moment-timezone": "^0.5.34",
+            "aws-sdk": "^2.1025.0",
+            "ask-sdk-controls": "^0.8.0"
         },
          "apis": {
           "custom": {}

@@ -35,7 +35,7 @@
             "custom": {
                 "endpoint": {
                     "sourceDir": "lambda/custom",
-                    "uri": "ask-custom-helloworld-default"
+                    "uri": "ask-amica-memoria-alexage"
                 }
             }
         },
