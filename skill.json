@@ -168,16 +168,7 @@
                 "endpoint": {
                     "sourceDir": "lambda/custom",
                     "uri": "ask-custom-helloworld-default"
-                },
-                "interfaces": [
-                    {
-                      "type": "AUDIO_PLAYER"
-                    },
-                    {
-                      "minimumTemplateVersion": "1.0",
-                      "type": "RENDER_TEMPLATE"
-                    }
-                ]
+                }
             }
         },
         "permissions": [
