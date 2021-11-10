@@ -34,5 +34,7 @@ The back end is where the logic of your skill resides.
 * [Official Alexa Skills Kit Node.js SDK](https://www.npmjs.com/package/ask-sdk) - The Official Node.js SDK Documentation
 * Languages supported: ita
 
+---
+
 ### Dev Zone
  * [Alexa Console](https://developer.amazon.com/alexa/console)
