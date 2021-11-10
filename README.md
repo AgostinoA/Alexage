@@ -28,9 +28,11 @@ The back end is where the logic of your skill resides.
 
  * If this is your first skill, choose the [Alexa-Hosted backend instructions](./instructions/setup-vui-alexa-hosted.md) to get started quickly.
 
-
 ---
 
 ### Documentation
 * [Official Alexa Skills Kit Node.js SDK](https://www.npmjs.com/package/ask-sdk) - The Official Node.js SDK Documentation
 * Languages supported: ita
+
+### Dev Zone
+ * [Alexa Console](https://developer.amazon.com/alexa/console)
