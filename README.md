@@ -37,4 +37,4 @@ The back end is where the logic of your skill resides.
 ---
 
 ### Dev Zone
- * [Alexa Console](https://developer.amazon.com/alexa/console)
+ * [Alexa Console](https://developer.amazon.com/alexa/console) - Alexa is Amazon's cloud-based voice, this is console for developer
